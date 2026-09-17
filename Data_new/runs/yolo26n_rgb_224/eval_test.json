@@ -1,0 +1,9 @@
+{
+  "split": "test",
+  "n_images": 3723,
+  "n_instances": 4243,
+  "precision": 0.822,
+  "recall": 0.75,
+  "mAP50": 0.779,
+  "mAP50_95": 0.269
+}

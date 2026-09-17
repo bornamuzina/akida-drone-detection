@@ -1,0 +1,594 @@
+{
+  "split_unit": "clip",
+  "rationale": "consecutive frames are near-duplicates; a frame-level split would leak training data into the test set",
+  "stratified_by": "median target size in 224x224 space",
+  "seed": 0,
+  "pinned_to_test": [
+    "V_DRONE_001",
+    "V_DRONE_045",
+    "V_DRONE_106"
+  ],
+  "train": [
+    "V_DRONE_002",
+    "V_DRONE_003",
+    "V_DRONE_004",
+    "V_DRONE_005",
+    "V_DRONE_006",
+    "V_DRONE_007",
+    "V_DRONE_008",
+    "V_DRONE_010",
+    "V_DRONE_011",
+    "V_DRONE_012",
+    "V_DRONE_013",
+    "V_DRONE_014",
+    "V_DRONE_018",
+    "V_DRONE_019",
+    "V_DRONE_020",
+    "V_DRONE_022",
+    "V_DRONE_023",
+    "V_DRONE_024",
+    "V_DRONE_025",
+    "V_DRONE_026",
+    "V_DRONE_027",
+    "V_DRONE_029",
+    "V_DRONE_030",
+    "V_DRONE_031",
+    "V_DRONE_032",
+    "V_DRONE_033",
+    "V_DRONE_034",
+    "V_DRONE_037",
+    "V_DRONE_038",
+    "V_DRONE_039",
+    "V_DRONE_041",
+    "V_DRONE_042",
+    "V_DRONE_043",
+    "V_DRONE_044",
+    "V_DRONE_047",
+    "V_DRONE_049",
+    "V_DRONE_050",
+    "V_DRONE_052",
+    "V_DRONE_053",
+    "V_DRONE_054",
+    "V_DRONE_056",
+    "V_DRONE_057",
+    "V_DRONE_059",
+    "V_DRONE_060",
+    "V_DRONE_061",
+    "V_DRONE_063",
+    "V_DRONE_064",
+    "V_DRONE_065",
+    "V_DRONE_066",
+    "V_DRONE_067",
+    "V_DRONE_068",
+    "V_DRONE_069",
+    "V_DRONE_070",
+    "V_DRONE_071",
+    "V_DRONE_072",
+    "V_DRONE_073",
+    "V_DRONE_074",
+    "V_DRONE_075",
+    "V_DRONE_076",
+    "V_DRONE_077",
+    "V_DRONE_078",
+    "V_DRONE_079",
+    "V_DRONE_082",
+    "V_DRONE_083",
+    "V_DRONE_084",
+    "V_DRONE_086",
+    "V_DRONE_087",
+    "V_DRONE_088",
+    "V_DRONE_089",
+    "V_DRONE_090",
+    "V_DRONE_091",
+    "V_DRONE_093",
+    "V_DRONE_094",
+    "V_DRONE_095",
+    "V_DRONE_096",
+    "V_DRONE_098",
+    "V_DRONE_099",
+    "V_DRONE_100",
+    "V_DRONE_101",
+    "V_DRONE_102",
+    "V_DRONE_103",
+    "V_DRONE_104",
+    "V_DRONE_105",
+    "V_DRONE_107",
+    "V_DRONE_109",
+    "V_DRONE_110",
+    "V_DRONE_111",
+    "V_DRONE_112",
+    "V_DRONE_113",
+    "V_DRONE_114"
+  ],
+  "validation": [
+    "V_DRONE_009",
+    "V_DRONE_015",
+    "V_DRONE_017",
+    "V_DRONE_028",
+    "V_DRONE_040",
+    "V_DRONE_046",
+    "V_DRONE_051",
+    "V_DRONE_055",
+    "V_DRONE_058",
+    "V_DRONE_062",
+    "V_DRONE_081",
+    "V_DRONE_097"
+  ],
+  "test": [
+    "V_DRONE_001",
+    "V_DRONE_016",
+    "V_DRONE_021",
+    "V_DRONE_035",
+    "V_DRONE_036",
+    "V_DRONE_045",
+    "V_DRONE_048",
+    "V_DRONE_080",
+    "V_DRONE_085",
+    "V_DRONE_092",
+    "V_DRONE_106",
+    "V_DRONE_108"
+  ],
+  "counts": {
+    "train": 90,
+    "validation": 12,
+    "test": 12
+  },
+  "per_clip": {
+    "V_DRONE_001": {
+      "n_boxes": 301,
+      "median_size": 19.91182748813942
+    },
+    "V_DRONE_002": {
+      "n_boxes": 301,
+      "median_size": 11.393571342221644
+    },
+    "V_DRONE_003": {
+      "n_boxes": 313,
+      "median_size": 10.952406150310276
+    },
+    "V_DRONE_004": {
+      "n_boxes": 303,
+      "median_size": 8.291146715517643
+    },
+    "V_DRONE_005": {
+      "n_boxes": 305,
+      "median_size": 11.934494066652796
+    },
+    "V_DRONE_006": {
+      "n_boxes": 307,
+      "median_size": 10.065582048913916
+    },
+    "V_DRONE_007": {
+      "n_boxes": 302,
+      "median_size": 9.78308907482565
+    },
+    "V_DRONE_008": {
+      "n_boxes": 302,
+      "median_size": 7.135450345423083
+    },
+    "V_DRONE_009": {
+      "n_boxes": 302,
+      "median_size": 7.865307638329931
+    },
+    "V_DRONE_010": {
+      "n_boxes": 301,
+      "median_size": 8.178325011883546
+    },
+    "V_DRONE_011": {
+      "n_boxes": 302,
+      "median_size": 10.510484821916206
+    },
+    "V_DRONE_012": {
+      "n_boxes": 320,
+      "median_size": 9.879128464613228
+    },
+    "V_DRONE_013": {
+      "n_boxes": 328,
+      "median_size": 19.88799687898286
+    },
+    "V_DRONE_014": {
+      "n_boxes": 328,
+      "median_size": 13.370475824316333
+    },
+    "V_DRONE_015": {
+      "n_boxes": 328,
+      "median_size": 11.992120406312505
+    },
+    "V_DRONE_016": {
+      "n_boxes": 310,
+      "median_size": 11.306201670891305
+    },
+    "V_DRONE_017": {
+      "n_boxes": 328,
+      "median_size": 10.967361959220082
+    },
+    "V_DRONE_018": {
+      "n_boxes": 302,
+      "median_size": 9.308602489926143
+    },
+    "V_DRONE_019": {
+      "n_boxes": 321,
+      "median_size": 8.888230133042205
+    },
+    "V_DRONE_020": {
+      "n_boxes": 302,
+      "median_size": 12.762679951817272
+    },
+    "V_DRONE_021": {
+      "n_boxes": 309,
+      "median_size": 9.729667835776313
+    },
+    "V_DRONE_022": {
+      "n_boxes": 301,
+      "median_size": 12.36508426114142
+    },
+    "V_DRONE_023": {
+      "n_boxes": 301,
+      "median_size": 15.907326631934112
+    },
+    "V_DRONE_024": {
+      "n_boxes": 302,
+      "median_size": 10.94685870041292
+    },
+    "V_DRONE_025": {
+      "n_boxes": 305,
+      "median_size": 15.528675772186917
+    },
+    "V_DRONE_026": {
+      "n_boxes": 311,
+      "median_size": 8.119996942258355
+    },
+    "V_DRONE_027": {
+      "n_boxes": 307,
+      "median_size": 12.811257319215887
+    },
+    "V_DRONE_028": {
+      "n_boxes": 311,
+      "median_size": 8.786984392364415
+    },
+    "V_DRONE_029": {
+      "n_boxes": 301,
+      "median_size": 8.291707032565014
+    },
+    "V_DRONE_030": {
+      "n_boxes": 322,
+      "median_size": 8.072793816269556
+    },
+    "V_DRONE_031": {
+      "n_boxes": 328,
+      "median_size": 8.797522968018601
+    },
+    "V_DRONE_032": {
+      "n_boxes": 314,
+      "median_size": 7.728408165670028
+    },
+    "V_DRONE_033": {
+      "n_boxes": 300,
+      "median_size": 9.065979102553001
+    },
+    "V_DRONE_034": {
+      "n_boxes": 300,
+      "median_size": 11.641773890690732
+    },
+    "V_DRONE_035": {
+      "n_boxes": 302,
+      "median_size": 11.605724142097003
+    },
+    "V_DRONE_036": {
+      "n_boxes": 302,
+      "median_size": 9.213712606761728
+    },
+    "V_DRONE_037": {
+      "n_boxes": 300,
+      "median_size": 8.393443481612026
+    },
+    "V_DRONE_038": {
+      "n_boxes": 304,
+      "median_size": 8.687282087017046
+    },
+    "V_DRONE_039": {
+      "n_boxes": 303,
+      "median_size": 6.501132067962491
+    },
+    "V_DRONE_040": {
+      "n_boxes": 311,
+      "median_size": 18.206729525095934
+    },
+    "V_DRONE_041": {
+      "n_boxes": 327,
+      "median_size": 10.089454516021599
+    },
+    "V_DRONE_042": {
+      "n_boxes": 303,
+      "median_size": 9.787250753982772
+    },
+    "V_DRONE_043": {
+      "n_boxes": 305,
+      "median_size": 11.566998427555209
+    },
+    "V_DRONE_044": {
+      "n_boxes": 312,
+      "median_size": 13.446798569376789
+    },
+    "V_DRONE_045": {
+      "n_boxes": 323,
+      "median_size": 10.545412109032993
+    },
+    "V_DRONE_046": {
+      "n_boxes": 312,
+      "median_size": 10.908318605367663
+    },
+    "V_DRONE_047": {
+      "n_boxes": 301,
+      "median_size": 7.715892689767011
+    },
+    "V_DRONE_048": {
+      "n_boxes": 323,
+      "median_size": 9.08290403007384
+    },
+    "V_DRONE_049": {
+      "n_boxes": 307,
+      "median_size": 10.957900312062476
+    },
+    "V_DRONE_050": {
+      "n_boxes": 316,
+      "median_size": 7.857480512225276
+    },
+    "V_DRONE_051": {
+      "n_boxes": 309,
+      "median_size": 7.522964841071636
+    },
+    "V_DRONE_052": {
+      "n_boxes": 312,
+      "median_size": 7.316590736128405
+    },
+    "V_DRONE_053": {
+      "n_boxes": 300,
+      "median_size": 10.181232642848961
+    },
+    "V_DRONE_054": {
+      "n_boxes": 301,
+      "median_size": 9.13604192191817
+    },
+    "V_DRONE_055": {
+      "n_boxes": 301,
+      "median_size": 7.006708805164273
+    },
+    "V_DRONE_056": {
+      "n_boxes": 305,
+      "median_size": 9.56237252543149
+    },
+    "V_DRONE_057": {
+      "n_boxes": 329,
+      "median_size": 9.284276442615955
+    },
+    "V_DRONE_058": {
+      "n_boxes": 305,
+      "median_size": 8.185985648283241
+    },
+    "V_DRONE_059": {
+      "n_boxes": 329,
+      "median_size": 8.633576023348606
+    },
+    "V_DRONE_060": {
+      "n_boxes": 308,
+      "median_size": 13.040985388829352
+    },
+    "V_DRONE_061": {
+      "n_boxes": 308,
+      "median_size": 10.017520019135215
+    },
+    "V_DRONE_062": {
+      "n_boxes": 315,
+      "median_size": 12.877107006647696
+    },
+    "V_DRONE_063": {
+      "n_boxes": 306,
+      "median_size": 8.58065471594404
+    },
+    "V_DRONE_064": {
+      "n_boxes": 316,
+      "median_size": 9.832812414222403
+    },
+    "V_DRONE_065": {
+      "n_boxes": 321,
+      "median_size": 8.82370679174846
+    },
+    "V_DRONE_066": {
+      "n_boxes": 326,
+      "median_size": 10.489028256245899
+    },
+    "V_DRONE_067": {
+      "n_boxes": 325,
+      "median_size": 11.295532584591497
+    },
+    "V_DRONE_068": {
+      "n_boxes": 311,
+      "median_size": 9.846031770194964
+    },
+    "V_DRONE_069": {
+      "n_boxes": 316,
+      "median_size": 8.419819353310496
+    },
+    "V_DRONE_070": {
+      "n_boxes": 305,
+      "median_size": 9.131551464080365
+    },
+    "V_DRONE_071": {
+      "n_boxes": 315,
+      "median_size": 9.201395787140392
+    },
+    "V_DRONE_072": {
+      "n_boxes": 311,
+      "median_size": 16.3269064471192
+    },
+    "V_DRONE_073": {
+      "n_boxes": 311,
+      "median_size": 9.852699649764062
+    },
+    "V_DRONE_074": {
+      "n_boxes": 316,
+      "median_size": 15.381780331365778
+    },
+    "V_DRONE_075": {
+      "n_boxes": 315,
+      "median_size": 12.038541513159126
+    },
+    "V_DRONE_076": {
+      "n_boxes": 306,
+      "median_size": 12.207004222491133
+    },
+    "V_DRONE_077": {
+      "n_boxes": 316,
+      "median_size": 11.287160847617969
+    },
+    "V_DRONE_078": {
+      "n_boxes": 300,
+      "median_size": 11.719161165729068
+    },
+    "V_DRONE_079": {
+      "n_boxes": 311,
+      "median_size": 12.53543957681389
+    },
+    "V_DRONE_080": {
+      "n_boxes": 300,
+      "median_size": 17.33424423724469
+    },
+    "V_DRONE_081": {
+      "n_boxes": 303,
+      "median_size": 14.201961404495336
+    },
+    "V_DRONE_082": {
+      "n_boxes": 307,
+      "median_size": 12.36901480615929
+    },
+    "V_DRONE_083": {
+      "n_boxes": 304,
+      "median_size": 11.037668416960152
+    },
+    "V_DRONE_084": {
+      "n_boxes": 312,
+      "median_size": 11.604185883988176
+    },
+    "V_DRONE_085": {
+      "n_boxes": 316,
+      "median_size": 9.936158722284283
+    },
+    "V_DRONE_086": {
+      "n_boxes": 312,
+      "median_size": 15.406937801314735
+    },
+    "V_DRONE_087": {
+      "n_boxes": 312,
+      "median_size": 17.404192589680715
+    },
+    "V_DRONE_088": {
+      "n_boxes": 316,
+      "median_size": 9.175716263627644
+    },
+    "V_DRONE_089": {
+      "n_boxes": 325,
+      "median_size": 10.204165815979275
+    },
+    "V_DRONE_090": {
+      "n_boxes": 312,
+      "median_size": 19.286841518604817
+    },
+    "V_DRONE_091": {
+      "n_boxes": 329,
+      "median_size": 19.0247304701768
+    },
+    "V_DRONE_092": {
+      "n_boxes": 329,
+      "median_size": 12.529887123950274
+    },
+    "V_DRONE_093": {
+      "n_boxes": 329,
+      "median_size": 11.246299816546712
+    },
+    "V_DRONE_094": {
+      "n_boxes": 321,
+      "median_size": 9.9161265376418
+    },
+    "V_DRONE_095": {
+      "n_boxes": 312,
+      "median_size": 9.570773562234066
+    },
+    "V_DRONE_096": {
+      "n_boxes": 325,
+      "median_size": 14.576281557569633
+    },
+    "V_DRONE_097": {
+      "n_boxes": 303,
+      "median_size": 8.42966941823533
+    },
+    "V_DRONE_098": {
+      "n_boxes": 318,
+      "median_size": 8.974016095689644
+    },
+    "V_DRONE_099": {
+      "n_boxes": 309,
+      "median_size": 13.75574500100559
+    },
+    "V_DRONE_100": {
+      "n_boxes": 328,
+      "median_size": 11.925404065652081
+    },
+    "V_DRONE_101": {
+      "n_boxes": 307,
+      "median_size": 10.990222927675307
+    },
+    "V_DRONE_102": {
+      "n_boxes": 305,
+      "median_size": 14.965018317833795
+    },
+    "V_DRONE_103": {
+      "n_boxes": 321,
+      "median_size": 9.54416048080579
+    },
+    "V_DRONE_104": {
+      "n_boxes": 300,
+      "median_size": 9.986662584150373
+    },
+    "V_DRONE_105": {
+      "n_boxes": 304,
+      "median_size": 5.729645143790853
+    },
+    "V_DRONE_106": {
+      "n_boxes": 608,
+      "median_size": 9.6711516027768
+    },
+    "V_DRONE_107": {
+      "n_boxes": 600,
+      "median_size": 9.818137854260284
+    },
+    "V_DRONE_108": {
+      "n_boxes": 520,
+      "median_size": 10.08142761373831
+    },
+    "V_DRONE_109": {
+      "n_boxes": 326,
+      "median_size": 11.50351077133647
+    },
+    "V_DRONE_110": {
+      "n_boxes": 325,
+      "median_size": 11.503578851335304
+    },
+    "V_DRONE_111": {
+      "n_boxes": 322,
+      "median_size": 6.986341907444253
+    },
+    "V_DRONE_112": {
+      "n_boxes": 300,
+      "median_size": 6.472634703117425
+    },
+    "V_DRONE_113": {
+      "n_boxes": 322,
+      "median_size": 7.303272927038172
+    },
+    "V_DRONE_114": {
+      "n_boxes": 316,
+      "median_size": 7.6134498757003986
+    }
+  }
+}

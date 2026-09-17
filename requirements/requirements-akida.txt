@@ -1,0 +1,42 @@
+# ============================================================
+# YOLOv2 training, evaluation, and Akida conversion
+#   src/model/*
+#   src/checks/check_akida_channels.py
+# ============================================================
+#
+# Kept separate from the event environment because the two cannot
+# coexist:
+#
+#   numpy         events need 1.26 (OpenEB ABI), akida pulls 2.1
+#   tensorflow    cnn2snn requires ~=2.19.0; the other venv has 2.21
+#
+# Create with:
+#   python -m venv C:\tmp\akida\venv
+#   C:\tmp\akida\venv\Scripts\Activate.ps1
+#   pip install -r requirements-akida.txt
+#
+# On Colab and Kaggle the runtime python is too new for the TF 2.19
+# wheel, so every notebook builds a python 3.11 venv first:
+#   !apt-get install -qq python3.11 python3.11-venv python3.11-dev
+#   !python3.11 -m venv /content/akv
+#   !/content/akv/bin/pip install -q akida-models==1.14.2
+#
+# And every command there needs MPLBACKEND=Agg, because Colab's inline
+# matplotlib backend is not valid inside the venv and TF imports
+# matplotlib on the way up.
+
+# Pulls akida, cnn2snn, quantizeml, tensorflow 2.19.1, tf_keras 2.19.0
+# and keras 3.15.1. Pinned: the yolo_base signature and the layer names
+# yolo_stride16.py transcribes are version-specific.
+akida-models==1.14.2
+
+# Used by the crop augmentation in train.py (cv2.resize) and by
+# build_rgb_tensors.py.
+opencv-python==4.12.0.88
+
+# NOTE on weights. train.py writes best.weights.h5 through whichever
+# Keras is active. Colab saves it in the Keras 3 layout ('layers',
+# 'vars'); a local load through tf_keras (Keras 2) cannot read that and
+# reports "expected 1 variables, but received 0". Load weights in the
+# same environment that wrote them, or use the best.keras file, which
+# both versions read.

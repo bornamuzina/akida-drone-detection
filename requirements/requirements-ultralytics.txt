@@ -1,0 +1,27 @@
+# ============================================================
+# YOLO26n  --  notebooks/yolo26n_rgb_224_kaggle.ipynb
+# ============================================================
+#
+# Ultralytics brings its own training loop, dataset loader, augmentation
+# and metrics. None of src/model/ is involved -- it reads the jpg/txt
+# tree in Data_new/tensors_rgb/yolo26_rgb_224_ultralytics/ and its
+# data.yaml, nothing else.
+#
+# Needs its own venv: it wants a torch build that fights the tensorflow
+# pins in the akida environment.
+#
+#   python -m venv C:\tmp\ultra\venv
+#   C:\tmp\ultra\venv\Scripts\Activate.ps1
+#   pip install -r requirements-ultralytics.txt
+#
+# Train with:
+#   yolo detect train data=<path>/data.yaml model=yolo26n.pt \
+#       imgsz=224 epochs=50 batch=64 project=<out> name=<run>
+#
+# yolo26n.pt downloads itself on first use, so it is not committed.
+#
+# Hardware note: the P100 on Kaggle is compute capability 6.0 and this
+# torch build supports 7.0 and up, so it fails with "no kernel image is
+# available for execution on the device". Use a T4.
+
+ultralytics==8.4.145

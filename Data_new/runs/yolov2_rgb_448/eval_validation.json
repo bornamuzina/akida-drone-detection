@@ -1,0 +1,37 @@
+{
+  "run": "full_rgb_448",
+  "split": "validation",
+  "n_samples": 3728,
+  "conf_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "nms_threshold": 0.4,
+  "tp": 2781,
+  "fp": 1074,
+  "fn": 947,
+  "precision": 0.7214007782101167,
+  "recall": 0.7459763948497854,
+  "f1": 0.7334827904523276,
+  "average_precision": 0.6489891980660408,
+  "recall_by_size": {
+    "0-8": {
+      "boxes": 0,
+      "found": 0,
+      "recall": null
+    },
+    "8-12": {
+      "boxes": 75,
+      "found": 45,
+      "recall": 0.6
+    },
+    "12-16": {
+      "boxes": 858,
+      "found": 426,
+      "recall": 0.4965034965034965
+    },
+    "16-999": {
+      "boxes": 2795,
+      "found": 2310,
+      "recall": 0.8264758497316637
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# ============================================================
+# Event conversion  --  src/data/convert_video_to_events.py
+#                       src/data/generate_events*.py
+#                       src/data/build_tensors.py
+#                       src/checks/verify_event_labels.py
+# ============================================================
+#
+# This environment cannot be created by pip alone. Prophesee's
+# Metavision SDK (OpenEB) is built from source, and the Python
+# bindings it produces are what the simulator actually imports.
+#
+#   OpenEB      branch 5.2.0, built at C:\dev\openeb
+#   CMake       3.26.6
+#   Compiler    Visual Studio 2022, MSVC 19.44 x64
+#   vcpkg       C:\vcpkg, pinned to tag 2024.11.16
+#
+# Activate with the SDK on the path, once per shell:
+#   C:\dev\openeb\build\utils\scripts\setup_env.bat
+#   C:\tmp\prophesee\py3venv\Scripts\activate
+#
+# See src/data/openeb_build_postmortem.pdf for what went wrong
+# building it and how each blocker was resolved.
+
+# numpy MUST stay below 2.x. The OpenEB python bindings are compiled
+# against the 1.x ABI and segfault on 2.x.
+numpy==1.26.4
+
+# Pinned because newer opencv changed VideoCapture frame indexing
+# behaviour on some codecs, and every label index in Data_new/labels
+# is 0-based against this version's frame numbering.
+opencv-python==4.5.5.64
+
+# The Prophesee event simulator runs on torch. CPU build is enough --
+# conversion is IO-bound, and a 114-clip run took 4.3 hours on three
+# parallel processes regardless.
+torch==2.9.1+cpu
+
+# Reads the .mat groundTruth MCOS objects in pure Python. Not used for
+# the current label set (those were exported via MATLAB R2026a before
+# this package was found) but it removes the MATLAB dependency for
+# anyone repeating the work. See Data_new/labels/label_extraction_notes.md
+mcos-decoder==0.1.0
+
+tqdm==4.70.0

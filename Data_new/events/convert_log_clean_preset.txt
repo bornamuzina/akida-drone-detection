@@ -1,0 +1,2513 @@
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_001.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     34835  frame    60 | events written     81327  frame    90 | events written    157612  frame   120 | events written    213910  frame   150 | events written    254726  frame   180 | events written    291779  frame   210 | events written    341623  frame   240 | events written    398240  frame   270 | events written    429451  frame   300 | events written    457538
+
+Frames     : 301
+Events     : 458486
+Last event : 10000.0 ms
+Rate       : 45849 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_001.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_002.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     18239  frame    60 | events written     34561  frame    90 | events written     46112  frame   120 | events written     53061  frame   150 | events written     61175  frame   180 | events written     66884  frame   210 | events written     72178  frame   240 | events written     81075  frame   270 | events written     84495  frame   300 | events written     87974
+
+Frames     : 301
+Events     : 88068
+Last event : 9999.6 ms
+Rate       : 8807 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_002.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_003.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      4516  frame    60 | events written     10427  frame    90 | events written     12296  frame   120 | events written     14917  frame   150 | events written     17215  frame   180 | events written     18068  frame   210 | events written     19168  frame   240 | events written     20358  frame   270 | events written     21744  frame   300 | events written     23141
+
+Frames     : 313
+Events     : 23554
+Last event : 10399.6 ms
+Rate       : 2265 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_003.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_004.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       671  frame    60 | events written      1685  frame    90 | events written      3027  frame   120 | events written      4370  frame   150 | events written      5768  frame   180 | events written      7203  frame   210 | events written      9013  frame   240 | events written     11384  frame   270 | events written     13810  frame   300 | events written     18765
+
+Frames     : 303
+Events     : 19722
+Last event : 10066.6 ms
+Rate       : 1959 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_004.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_005.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1051  frame    60 | events written      2504  frame    90 | events written      4958  frame   120 | events written      7256  frame   150 | events written     11421  frame   180 | events written     28142  frame   210 | events written     74135  frame   240 | events written    189628  frame   270 | events written    364678  frame   300 | events written    372084
+
+Frames     : 305
+Events     : 374436
+Last event : 10133.3 ms
+Rate       : 36951 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_005.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_006.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5327  frame    60 | events written     10859  frame    90 | events written     15382  frame   120 | events written     17945  frame   150 | events written     21258  frame   180 | events written     24714  frame   210 | events written     27059  frame   240 | events written     30420  frame   270 | events written     34135  frame   300 | events written     36455
+
+Frames     : 307
+Events     : 36745
+Last event : 10199.9 ms
+Rate       : 3602 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_006.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_007.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     10911  frame    60 | events written     22469  frame    90 | events written     30260  frame   120 | events written     31656  frame   150 | events written     35309  frame   180 | events written     38931  frame   210 | events written     41939  frame   240 | events written     44720  frame   270 | events written     46737  frame   300 | events written     48307
+
+Frames     : 302
+Events     : 48413
+Last event : 10033.3 ms
+Rate       : 4825 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_007.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_008.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1238  frame    60 | events written      2595  frame    90 | events written      3580  frame   120 | events written      4347  frame   150 | events written      5605  frame   180 | events written      6658  frame   210 | events written      7475  frame   240 | events written      7954  frame   270 | events written      8749  frame   300 | events written      9455
+
+Frames     : 302
+Events     : 9482
+Last event : 10033.3 ms
+Rate       : 945 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_008.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_009.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       628  frame    60 | events written      1433  frame    90 | events written      2147  frame   120 | events written      2662  frame   150 | events written      3160  frame   180 | events written      3596  frame   210 | events written      3936  frame   240 | events written      4187  frame   270 | events written      5266  frame   300 | events written      6106
+
+Frames     : 302
+Events     : 6138
+Last event : 10032.4 ms
+Rate       : 612 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_009.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_010.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1179  frame    60 | events written      2131  frame    90 | events written      4033  frame   120 | events written      8044  frame   150 | events written     10335  frame   180 | events written     12797  frame   210 | events written     15391  frame   240 | events written     16553  frame   270 | events written     20571  frame   300 | events written     25048
+
+Frames     : 301
+Events     : 25057
+Last event : 9993.2 ms
+Rate       : 2507 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_010.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_011.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5688  frame    60 | events written      8408  frame    90 | events written     11501  frame   120 | events written     19853  frame   150 | events written     21731  frame   180 | events written     22811  frame   210 | events written     23702  frame   240 | events written     27318  frame   270 | events written     31328  frame   300 | events written     33109
+
+Frames     : 302
+Events     : 33230
+Last event : 10033.2 ms
+Rate       : 3312 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_011.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_012.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5880  frame    60 | events written     10043  frame    90 | events written     12240  frame   120 | events written     19786  frame   150 | events written     26379  frame   180 | events written     39173  frame   210 | events written     67857  frame   240 | events written    101715  frame   270 | events written    134009  frame   300 | events written    152247
+
+Frames     : 320
+Events     : 174115
+Last event : 10633.3 ms
+Rate       : 16374 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_012.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_013.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     45594  frame    60 | events written     93209  frame    90 | events written    137445  frame   120 | events written    150846  frame   150 | events written    172494  frame   180 | events written    197451  frame   210 | events written    250282  frame   240 | events written    271171  frame   270 | events written    289700  frame   300 | events written    320672
+
+Frames     : 328
+Events     : 338542
+Last event : 10900.0 ms
+Rate       : 31059 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_013.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_014.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     12197  frame    60 | events written     22597  frame    90 | events written     31216  frame   120 | events written     35162  frame   150 | events written     43452  frame   180 | events written     48975  frame   210 | events written     54751  frame   240 | events written     61116  frame   270 | events written     68111  frame   300 | events written     74803
+
+Frames     : 328
+Events     : 79724
+Last event : 10899.9 ms
+Rate       : 7314 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_014.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_015.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      7962  frame    60 | events written     16488  frame    90 | events written     23239  frame   120 | events written     30856  frame   150 | events written     39818  frame   180 | events written     47469  frame   210 | events written     53550  frame   240 | events written     60090  frame   270 | events written     69005  frame   300 | events written     74621
+
+Frames     : 328
+Events     : 81878
+Last event : 10899.9 ms
+Rate       : 7512 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_015.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_016.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      8647  frame    60 | events written     18595  frame    90 | events written     31886  frame   120 | events written     55686  frame   150 | events written     68775  frame   180 | events written     74277  frame   210 | events written     84363  frame   240 | events written     99847  frame   270 | events written    112116  frame   300 | events written    132361
+
+Frames     : 310
+Events     : 137078
+Last event : 10299.9 ms
+Rate       : 13309 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_016.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_017.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     11981  frame    60 | events written     19584  frame    90 | events written     25177  frame   120 | events written     34348  frame   150 | events written     41914  frame   180 | events written     48906  frame   210 | events written     54998  frame   240 | events written     63555  frame   270 | events written     74553  frame   300 | events written     88803
+
+Frames     : 328
+Events     : 106872
+Last event : 10900.0 ms
+Rate       : 9805 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_017.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_018.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1108  frame    60 | events written      3479  frame    90 | events written      6808  frame   120 | events written      7929  frame   150 | events written      9099  frame   180 | events written     10725  frame   210 | events written     11887  frame   240 | events written     13479  frame   270 | events written     15618  frame   300 | events written     16908
+
+Frames     : 302
+Events     : 17001
+Last event : 9999.9 ms
+Rate       : 1700 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_018.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_019.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1121  frame    60 | events written      2206  frame    90 | events written      2922  frame   120 | events written      3887  frame   150 | events written      4838  frame   180 | events written      5466  frame   210 | events written      6121  frame   240 | events written      6902  frame   270 | events written      7842  frame   300 | events written      8671
+
+Frames     : 321
+Events     : 9109
+Last event : 10664.9 ms
+Rate       : 854 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_019.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_020.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       228  frame    60 | events written       662  frame    90 | events written      1624  frame   120 | events written      2099  frame   150 | events written      2879  frame   180 | events written      3148  frame   210 | events written      3633  frame   240 | events written      4766  frame   270 | events written     10287  frame   300 | events written     15335
+
+Frames     : 302
+Events     : 15819
+Last event : 10033.3 ms
+Rate       : 1577 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_020.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_021.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     95342  frame    60 | events written    167603  frame    90 | events written    205321  frame   120 | events written    217114  frame   150 | events written    221402  frame   180 | events written    225950  frame   210 | events written    229699  frame   240 | events written    233326  frame   270 | events written    241698  frame   300 | events written    246821
+
+Frames     : 309
+Events     : 248391
+Last event : 10266.7 ms
+Rate       : 24194 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_021.dat
+Found 114 videos.
+
+============================================================
+Processing: V_DRONE_001
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_001.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_001.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_001_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_001
+
+============================================================
+Processing: V_DRONE_002
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_002.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_002.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_002_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_002
+
+============================================================
+Processing: V_DRONE_003
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_003.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_003.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_003_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_003
+
+============================================================
+Processing: V_DRONE_004
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_004.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_004.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_004_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_004
+
+============================================================
+Processing: V_DRONE_005
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_005.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_005.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_005_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_005
+
+============================================================
+Processing: V_DRONE_006
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_006.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_006.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_006_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_006
+
+============================================================
+Processing: V_DRONE_007
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_007.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_007.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_007_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_007
+
+============================================================
+Processing: V_DRONE_008
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_008.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_008.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_008_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_008
+
+============================================================
+Processing: V_DRONE_009
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_009.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_009.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_009_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_009
+
+============================================================
+Processing: V_DRONE_010
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_010.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_010.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_010_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_010
+
+============================================================
+Processing: V_DRONE_011
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_011.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_011.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_011_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_011
+
+============================================================
+Processing: V_DRONE_012
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_012.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_012.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_012_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_012
+
+============================================================
+Processing: V_DRONE_013
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_013.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_013.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_013_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_013
+
+============================================================
+Processing: V_DRONE_014
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_014.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_014.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_014_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_014
+
+============================================================
+Processing: V_DRONE_015
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_015.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_015.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_015_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_015
+
+============================================================
+Processing: V_DRONE_016
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_016.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_016.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_016_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_016
+
+============================================================
+Processing: V_DRONE_017
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_017.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_017.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_017_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_017
+
+============================================================
+Processing: V_DRONE_018
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_018.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_018.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_018_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_018
+
+============================================================
+Processing: V_DRONE_019
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_019.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_019.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_019_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_019
+
+============================================================
+Processing: V_DRONE_020
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_020.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_020.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_020_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_020
+
+============================================================
+Processing: V_DRONE_021
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_021.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_021.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_021_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_021
+
+============================================================
+Processing: V_DRONE_022
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_022.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_022.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_022_LABELS.matInput      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_022.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      3036  frame    60 | events written      7580  frame    90 | events written     11024  frame   120 | events written     13356  frame   150 | events written     18600  frame   180 | events written     25577  frame   210 | events written     31722  frame   240 | events written     39027  frame   270 | events written     51412  frame   300 | events written     58913
+
+Frames     : 301
+Events     : 59209
+Last event : 10000.0 ms
+Rate       : 5921 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_022.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_023.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      6698  frame    60 | events written     14567  frame    90 | events written     63512  frame   120 | events written     97377  frame   150 | events written    116783  frame   180 | events written    130210  frame   210 | events written    139924  frame   240 | events written    148469  frame   270 | events written    158763  frame   300 | events written    162365
+
+Frames     : 301
+Events     : 162504
+Last event : 9999.9 ms
+Rate       : 16251 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_023.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_024.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1910  frame    60 | events written      3209  frame    90 | events written      4521  frame   120 | events written      6074  frame   150 | events written      6975  frame   180 | events written      7534  frame   210 | events written      8442  frame   240 | events written      9217  frame   270 | events written     10634  frame   300 | events written     12769
+
+Frames     : 302
+Events     : 12819
+Last event : 10032.9 ms
+Rate       : 1278 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_024.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_025.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2064  frame    60 | events written      5371  frame    90 | events written      8312  frame   120 | events written     13771  frame   150 | events written     27024  frame   180 | events written     42055  frame   210 | events written     57710  frame   240 | events written     76108  frame   270 | events written    119794  frame   300 | events written    195405
+
+Frames     : 305
+Events     : 215935
+Last event : 10133.3 ms
+Rate       : 21309 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_025.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_026.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1073  frame    60 | events written      1428  frame    90 | events written      2364  frame   120 | events written      3712  frame   150 | events written      4973  frame   180 | events written      5390  frame   210 | events written      6390  frame   240 | events written      7339  frame   270 | events written      8457  frame   300 | events written      8788
+
+Frames     : 311
+Events     : 8972
+Last event : 10330.5 ms
+Rate       : 868 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_026.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_027.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     24519  frame    60 | events written    177776  frame    90 | events written    222359  frame   120 | events written    335268  frame   150 | events written    350860  frame   180 | events written    358790  frame   210 | events written    364350  frame   240 | events written    368103  frame   270 | events written    378758  frame   300 | events written    381314
+
+Frames     : 307
+Events     : 381752
+Last event : 10199.1 ms
+Rate       : 37430 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_027.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_028.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       465  frame    60 | events written      1330  frame    90 | events written      2527  frame   120 | events written      3312  frame   150 | events written      4834  frame   180 | events written      6104  frame   210 | events written      6778  frame   240 | events written      7279  frame   270 | events written      8773  frame   300 | events written      9534
+
+Frames     : 311
+Events     : 9618
+Last event : 10331.8 ms
+Rate       : 931 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_028.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_029.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       133  frame    60 | events written       390  frame    90 | events written       665  frame   120 | events written      1069  frame   150 | events written      2266  frame   180 | events written      3143  frame   210 | events written      4496  frame   240 | events written      6488  frame   270 | events written      9582  frame   300 | events written     11822
+
+Frames     : 301
+Events     : 11908
+Last event : 9999.9 ms
+Rate       : 1191 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_029.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_030.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2271  frame    60 | events written      4573  frame    90 | events written      6130  frame   120 | events written      7306  frame   150 | events written      9536  frame   180 | events written     10573  frame   210 | events written     12917  frame   240 | events written     14818  frame   270 | events written     16338  frame   300 | events written     17023
+
+Frames     : 322
+Events     : 17582
+Last event : 10695.1 ms
+Rate       : 1644 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_030.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_031.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       844  frame    60 | events written      1293  frame    90 | events written      1852  frame   120 | events written      2493  frame   150 | events written      3807  frame   180 | events written      4500  frame   210 | events written      4904  frame   240 | events written      5407  frame   270 | events written      6558  frame   300 | events written      7243
+
+Frames     : 328
+Events     : 7620
+Last event : 10899.9 ms
+Rate       : 699 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_031.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_032.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       312  frame    60 | events written       932  frame    90 | events written      2253  frame   120 | events written     11899  frame   150 | events written     26687  frame   180 | events written     36888  frame   210 | events written     41693  frame   240 | events written     46768  frame   270 | events written     51152  frame   300 | events written     52818
+
+Frames     : 314
+Events     : 53089
+Last event : 10431.6 ms
+Rate       : 5089 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_032.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_033.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     13842  frame    60 | events written     21065  frame    90 | events written     31764  frame   120 | events written     44902  frame   150 | events written     53678  frame   180 | events written     56839  frame   210 | events written     58557  frame   240 | events written     61121  frame   270 | events written     64096  frame   300 | events written     65092
+
+Frames     : 300
+Events     : 65092
+Last event : 9966.6 ms
+Rate       : 6531 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_033.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_034.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       815  frame    60 | events written      1748  frame    90 | events written      2366  frame   120 | events written      3072  frame   150 | events written      4200  frame   180 | events written      4685  frame   210 | events written      4994  frame   240 | events written      5216  frame   270 | events written      6398  frame   300 | events written      6663
+
+Frames     : 300
+Events     : 6663
+Last event : 9948.1 ms
+Rate       : 670 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_034.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_035.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       206  frame    60 | events written       613  frame    90 | events written      1093  frame   120 | events written      1464  frame   150 | events written      2494  frame   180 | events written      2825  frame   210 | events written      3460  frame   240 | events written      3952  frame   270 | events written      5984  frame   300 | events written     12762
+
+Frames     : 302
+Events     : 13826
+Last event : 10033.3 ms
+Rate       : 1378 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_035.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_036.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     74549  frame    60 | events written    160918  frame    90 | events written    171936  frame   120 | events written    216460  frame   150 | events written    265088  frame   180 | events written    267730  frame   210 | events written    269319  frame   240 | events written    270685  frame   270 | events written    278291  frame   300 | events written    279547
+
+Frames     : 302
+Events     : 279607
+Last event : 10033.3 ms
+Rate       : 27868 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_036.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_037.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       831  frame    60 | events written      1768  frame    90 | events written      2700  frame   120 | events written      3526  frame   150 | events written      4859  frame   180 | events written      5265  frame   210 | events written      5632  frame   240 | events written      6277  frame   270 | events written      7101  frame   300 | events written      7915
+
+Frames     : 300
+Events     : 7915
+Last event : 9965.9 ms
+Rate       : 794 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_037.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_038.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1218  frame    60 | events written      5861  frame    90 | events written     81478  frame   120 | events written    125430  frame   150 | events written    175042  frame   180 | events written    251603  frame   210 | events written    255076  frame   240 | events written    255479  frame   270 | events written    260506  frame   300 | events written    260699
+
+Frames     : 304
+Events     : 260723
+Last event : 10098.8 ms
+Rate       : 25817 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_038.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_039.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       122  frame    60 | events written       197  frame    90 | events written       275  frame   120 | events written       441  frame   150 | events written      1151  frame   180 | events written      1166  frame   210 | events written      1183  frame   240 | events written      1402  frame   270 | events written      2051  frame   300 | events written      2103
+
+Frames     : 303
+Events     : 2105
+Last event : 10031.1 ms
+Rate       : 210 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_039.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_040.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     36324  frame    60 | events written     91861  frame    90 | events written    151821  frame   120 | events written    236882  frame   150 | events written    303957  frame   180 | events written    387623  frame   210 | events written    431750  frame   240 | events written    473373  frame   270 | events written    495874  frame   300 | events written    514144
+
+Frames     : 311
+Events     : 517816
+Last event : 10333.3 ms
+Rate       : 50112 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_040.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_041.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       369  frame    60 | events written       802  frame    90 | events written      1110  frame   120 | events written      1837  frame   150 | events written      3701  frame   180 | events written      4560  frame   210 | events written      4639  frame   240 | events written      4959  frame   270 | events written      6740  frame   300 | events written      8508
+
+Frames     : 327
+Events     : 11219
+Last event : 10866.6 ms
+Rate       : 1032 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_041.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_042.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       772  frame    60 | events written      2019  frame    90 | events written      3157  frame   120 | events written      8103  frame   150 | events written     16661  frame   180 | events written     19509  frame   210 | events written     20562  frame   240 | events written     21960  frame   270 | events written     24326  frame   300 | events written     25344
+
+Frames     : 303
+Events     : 25370
+Last event : 10053.4 ms
+Rate       : 2524 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_042.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_043.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       597  frame    60 | events written      1275  frame    90 | events written      2701  frame   120 | events written      3508  frame   150 | events written      5120  frame   180 | events written      7253  frame   210 | events written     10137  frame   240 | events written     30670  frame   270 | events written     36569  frame   300 | events written     37803
+
+Frames     : 305
+Events     : 38063
+Last event : 10132.9 ms
+Rate       : 3756 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_043.dat
+
+
+Running simulator...
+Finished: V_DRONE_022
+
+============================================================
+Processing: V_DRONE_023
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_023.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_023.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_023_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_023
+
+============================================================
+Processing: V_DRONE_024
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_024.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_024.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_024_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_024
+
+============================================================
+Processing: V_DRONE_025
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_025.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_025.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_025_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_025
+
+============================================================
+Processing: V_DRONE_026
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_026.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_026.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_026_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_026
+
+============================================================
+Processing: V_DRONE_027
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_027.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_027.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_027_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_027
+
+============================================================
+Processing: V_DRONE_028
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_028.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_028.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_028_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_028
+
+============================================================
+Processing: V_DRONE_029
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_029.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_029.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_029_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_029
+
+============================================================
+Processing: V_DRONE_030
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_030.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_030.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_030_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_030
+
+============================================================
+Processing: V_DRONE_031
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_031.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_031.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_031_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_031
+
+============================================================
+Processing: V_DRONE_032
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_032.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_032.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_032_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_032
+
+============================================================
+Processing: V_DRONE_033
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_033.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_033.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_033_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_033
+
+============================================================
+Processing: V_DRONE_034
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_034.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_034.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_034_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_034
+
+============================================================
+Processing: V_DRONE_035
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_035.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_035.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_035_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_035
+
+============================================================
+Processing: V_DRONE_036
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_036.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_036.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_036_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_036
+
+============================================================
+Processing: V_DRONE_037
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_037.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_037.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_037_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_037
+
+============================================================
+Processing: V_DRONE_038
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_038.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_038.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_038_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_038
+
+============================================================
+Processing: V_DRONE_039
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_039.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_039.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_039_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_039
+
+============================================================
+Processing: V_DRONE_040
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_040.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_040.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_040_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_040
+
+============================================================
+Processing: V_DRONE_041
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_041.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_041.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_041_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_041
+
+============================================================
+Processing: V_DRONE_042
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_042.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_042.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_042_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_042
+
+============================================================
+Processing: V_DRONE_043
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_043.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_043.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_043_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_043
+
+============================================================
+Processing: V_DRONE_044
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_044.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_044.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_044_LABELS.matInput      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_044.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       831  frame    60 | events written      3165  frame    90 | events written      6522  frame   120 | events written      9581  frame   150 | events written     13828  frame   180 | events written     15602  frame   210 | events written     20122  frame   240 | events written     24471  frame   270 | events written     31392  frame   300 | events written     41400
+
+Frames     : 312
+Events     : 46375
+Last event : 10366.6 ms
+Rate       : 4473 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_044.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_045.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      6282  frame    60 | events written     10054  frame    90 | events written     12966  frame   120 | events written     14915  frame   150 | events written     16695  frame   180 | events written     18305  frame   210 | events written     20985  frame   240 | events written     28784  frame   270 | events written     35279  frame   300 | events written     44425
+
+Frames     : 323
+Events     : 51841
+Last event : 10733.3 ms
+Rate       : 4830 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_045.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_046.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2606  frame    60 | events written    181093  frame    90 | events written    186339  frame   120 | events written    188647  frame   150 | events written    191521  frame   180 | events written    192960  frame   210 | events written    195050  frame   240 | events written    195991  frame   270 | events written    197734  frame   300 | events written    199290
+
+Frames     : 312
+Events     : 200377
+Last event : 10366.7 ms
+Rate       : 19329 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_046.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_047.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     51051  frame    60 | events written     79122  frame    90 | events written     85346  frame   120 | events written     88197  frame   150 | events written     90150  frame   180 | events written     91546  frame   210 | events written     92932  frame   240 | events written     93992  frame   270 | events written     95156  frame   300 | events written     96373
+
+Frames     : 301
+Events     : 96624
+Last event : 10000.0 ms
+Rate       : 9662 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_047.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_048.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2626  frame    60 | events written      4168  frame    90 | events written      5563  frame   120 | events written      6169  frame   150 | events written      7054  frame   180 | events written      9135  frame   210 | events written     17085  frame   240 | events written     25828  frame   270 | events written     32406  frame   300 | events written     42160
+
+Frames     : 323
+Events     : 53476
+Last event : 10733.3 ms
+Rate       : 4982 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_048.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_049.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5611  frame    60 | events written      7608  frame    90 | events written      9180  frame   120 | events written     10074  frame   150 | events written     11324  frame   180 | events written     12115  frame   210 | events written     13264  frame   240 | events written     14070  frame   270 | events written     15292  frame   300 | events written     16026
+
+Frames     : 307
+Events     : 16461
+Last event : 10199.2 ms
+Rate       : 1614 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_049.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_050.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2083  frame    60 | events written      2929  frame    90 | events written      3893  frame   120 | events written      4489  frame   150 | events written      5607  frame   180 | events written      6096  frame   210 | events written      7054  frame   240 | events written      7762  frame   270 | events written      9023  frame   300 | events written      9892
+
+Frames     : 316
+Events     : 10708
+Last event : 10500.0 ms
+Rate       : 1020 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_050.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_051.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2426  frame    60 | events written      3682  frame    90 | events written      5120  frame   120 | events written      6274  frame   150 | events written      7928  frame   180 | events written      8885  frame   210 | events written     10212  frame   240 | events written     11153  frame   270 | events written     12739  frame   300 | events written     13508
+
+Frames     : 309
+Events     : 14168
+Last event : 10266.4 ms
+Rate       : 1380 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_051.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_052.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2746  frame    60 | events written      4746  frame    90 | events written      6227  frame   120 | events written      7138  frame   150 | events written      8598  frame   180 | events written      9353  frame   210 | events written     10535  frame   240 | events written     11442  frame   270 | events written     12970  frame   300 | events written     13787
+
+Frames     : 312
+Events     : 14545
+Last event : 10366.5 ms
+Rate       : 1403 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_052.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_053.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     66996  frame    60 | events written     89528  frame    90 | events written     91190  frame   120 | events written    109027  frame   150 | events written    122416  frame   180 | events written    125061  frame   210 | events written    126328  frame   240 | events written    127131  frame   270 | events written    130935  frame   300 | events written    131488
+
+Frames     : 300
+Events     : 131488
+Last event : 9961.0 ms
+Rate       : 13200 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_053.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_054.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     16918  frame    60 | events written     34464  frame    90 | events written     44079  frame   120 | events written     48627  frame   150 | events written     51119  frame   180 | events written     54066  frame   210 | events written     56693  frame   240 | events written     58760  frame   270 | events written     60828  frame   300 | events written     62122
+
+Frames     : 301
+Events     : 62171
+Last event : 9999.8 ms
+Rate       : 6217 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_054.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_055.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1534  frame    60 | events written      2902  frame    90 | events written      3877  frame   120 | events written      4661  frame   150 | events written      5759  frame   180 | events written      6335  frame   210 | events written      7271  frame   240 | events written      8181  frame   270 | events written      8966  frame   300 | events written     10044
+
+Frames     : 301
+Events     : 10086
+Last event : 9999.1 ms
+Rate       : 1009 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_055.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_056.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       814  frame    60 | events written      2172  frame    90 | events written      4244  frame   120 | events written      5799  frame   150 | events written      8220  frame   180 | events written     10288  frame   210 | events written     11815  frame   240 | events written     13497  frame   270 | events written     14470  frame   300 | events written     15136
+
+Frames     : 305
+Events     : 15274
+Last event : 10133.3 ms
+Rate       : 1507 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_056.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_057.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       588  frame    60 | events written      1332  frame    90 | events written      1784  frame   120 | events written      2428  frame   150 | events written      3129  frame   180 | events written      3862  frame   210 | events written      4346  frame   240 | events written      4856  frame   270 | events written      5357  frame   300 | events written      5654
+
+Frames     : 329
+Events     : 5951
+Last event : 10933.1 ms
+Rate       : 544 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_057.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_058.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2286  frame    60 | events written      4883  frame    90 | events written      6864  frame   120 | events written      8925  frame   150 | events written     10321  frame   180 | events written     11625  frame   210 | events written     13138  frame   240 | events written     14351  frame   270 | events written     15743  frame   300 | events written     17502
+
+Frames     : 305
+Events     : 17787
+Last event : 10133.2 ms
+Rate       : 1755 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_058.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_059.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1342  frame    60 | events written      3467  frame    90 | events written      4837  frame   120 | events written      5935  frame   150 | events written      6775  frame   180 | events written      7129  frame   210 | events written      7598  frame   240 | events written      7974  frame   270 | events written      8640  frame   300 | events written      9152
+
+Frames     : 329
+Events     : 9930
+Last event : 10933.3 ms
+Rate       : 908 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_059.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_060.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      8969  frame    60 | events written     11834  frame    90 | events written     15519  frame   120 | events written     19256  frame   150 | events written     21923  frame   180 | events written     24538  frame   210 | events written     27686  frame   240 | events written     30914  frame   270 | events written     34126  frame   300 | events written     35855
+
+Frames     : 308
+Events     : 36284
+Last event : 10233.3 ms
+Rate       : 3546 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_060.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_061.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1270  frame    60 | events written      2520  frame    90 | events written      3384  frame   120 | events written      4113  frame   150 | events written      5309  frame   180 | events written      6173  frame   210 | events written      6968  frame   240 | events written      7981  frame   270 | events written      9248  frame   300 | events written     10295
+
+Frames     : 308
+Events     : 10468
+Last event : 10232.7 ms
+Rate       : 1023 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_061.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_062.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5571  frame    60 | events written     10154  frame    90 | events written     17051  frame   120 | events written     22562  frame   150 | events written     25317  frame   180 | events written     30031  frame   210 | events written     34444  frame   240 | events written     38890  frame   270 | events written     41512  frame   300 | events written     42931
+
+Frames     : 315
+Events     : 44040
+Last event : 10466.6 ms
+Rate       : 4208 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_062.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_063.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1588  frame    60 | events written      3495  frame    90 | events written      5472  frame   120 | events written      6232  frame   150 | events written      7533  frame   180 | events written      9008  frame   210 | events written     10161  frame   240 | events written     10630  frame   270 | events written     11234  frame   300 | events written     11565
+
+Frames     : 306
+Events     : 11606
+Last event : 10161.6 ms
+Rate       : 1142 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_063.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_064.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       439  frame    60 | events written       836  frame    90 | events written      1538  frame   120 | events written      2207  frame   150 | events written      3044  frame   180 | events written      4521  frame   210 | events written      5481  frame   240 | events written      7285  frame   270 | events written      8642  frame   300 | events written     11649
+
+Frames     : 316
+Events     : 13181
+Last event : 10499.6 ms
+Rate       : 1255 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_064.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_065.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1576  frame    60 | events written      6114  frame    90 | events written     10351  frame   120 | events written     13252  frame   150 | events written     15435  frame   180 | events written     17966  frame   210 | events written     20508  frame   240 | events written     22170  frame   270 | events written     23973  frame   300 | events written     25103
+
+Frames     : 321
+Events     : 25584
+Last event : 10666.5 ms
+Rate       : 2399 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_065.dat
+
+
+Running simulator...
+Finished: V_DRONE_044
+
+============================================================
+Processing: V_DRONE_045
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_045.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_045.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_045_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_045
+
+============================================================
+Processing: V_DRONE_046
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_046.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_046.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_046_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_046
+
+============================================================
+Processing: V_DRONE_047
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_047.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_047.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_047_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_047
+
+============================================================
+Processing: V_DRONE_048
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_048.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_048.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_048_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_048
+
+============================================================
+Processing: V_DRONE_049
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_049.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_049.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_049_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_049
+
+============================================================
+Processing: V_DRONE_050
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_050.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_050.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_050_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_050
+
+============================================================
+Processing: V_DRONE_051
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_051.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_051.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_051_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_051
+
+============================================================
+Processing: V_DRONE_052
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_052.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_052.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_052_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_052
+
+============================================================
+Processing: V_DRONE_053
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_053.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_053.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_053_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_053
+
+============================================================
+Processing: V_DRONE_054
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_054.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_054.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_054_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_054
+
+============================================================
+Processing: V_DRONE_055
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_055.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_055.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_055_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_055
+
+============================================================
+Processing: V_DRONE_056
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_056.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_056.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_056_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_056
+
+============================================================
+Processing: V_DRONE_057
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_057.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_057.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_057_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_057
+
+============================================================
+Processing: V_DRONE_058
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_058.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_058.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_058_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_058
+
+============================================================
+Processing: V_DRONE_059
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_059.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_059.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_059_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_059
+
+============================================================
+Processing: V_DRONE_060
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_060.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_060.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_060_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_060
+
+============================================================
+Processing: V_DRONE_061
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_061.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_061.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_061_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_061
+
+============================================================
+Processing: V_DRONE_062
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_062.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_062.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_062_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_062
+
+============================================================
+Processing: V_DRONE_063
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_063.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_063.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_063_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_063
+
+============================================================
+Processing: V_DRONE_064
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_064.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_064.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_064_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_064
+
+============================================================
+Processing: V_DRONE_065
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_065.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_065.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_065_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_065
+
+============================================================
+Processing: V_DRONE_066
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_066.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_066.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_066_LABELS.matInput      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_066.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       806  frame    60 | events written      1596  frame    90 | events written      1914  frame   120 | events written      2556  frame   150 | events written      3708  frame   180 | events written      4319  frame   210 | events written      5720  frame   240 | events written      6893  frame   270 | events written      8152  frame   300 | events written      9424
+
+Frames     : 326
+Events     : 10074
+Last event : 10833.0 ms
+Rate       : 930 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_066.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_067.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      3387  frame    60 | events written     11671  frame    90 | events written     19412  frame   120 | events written     24082  frame   150 | events written     27801  frame   180 | events written     32379  frame   210 | events written     36936  frame   240 | events written     43319  frame   270 | events written     47193  frame   300 | events written     49779
+
+Frames     : 325
+Events     : 53806
+Last event : 10799.8 ms
+Rate       : 4982 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_067.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_068.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5228  frame    60 | events written      7698  frame    90 | events written      9983  frame   120 | events written     12829  frame   150 | events written     15026  frame   180 | events written     17961  frame   210 | events written     19924  frame   240 | events written     21532  frame   270 | events written     23914  frame   300 | events written     25775
+
+Frames     : 311
+Events     : 26028
+Last event : 10332.5 ms
+Rate       : 2519 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_068.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_069.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       642  frame    60 | events written      1386  frame    90 | events written      2596  frame   120 | events written      3711  frame   150 | events written      5454  frame   180 | events written      7136  frame   210 | events written      9808  frame   240 | events written     12516  frame   270 | events written     15373  frame   300 | events written     17928
+
+Frames     : 316
+Events     : 19448
+Last event : 10499.9 ms
+Rate       : 1852 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_069.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_070.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1016  frame    60 | events written      2327  frame    90 | events written      3544  frame   120 | events written      3967  frame   150 | events written      4298  frame   180 | events written      4553  frame   210 | events written      4809  frame   240 | events written      4963  frame   270 | events written      5280  frame   300 | events written      5431
+
+Frames     : 305
+Events     : 5452
+Last event : 10133.1 ms
+Rate       : 538 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_070.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_071.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       186  frame    60 | events written       433  frame    90 | events written       610  frame   120 | events written       839  frame   150 | events written      1279  frame   180 | events written      1823  frame   210 | events written      2090  frame   240 | events written      2373  frame   270 | events written      2926  frame   300 | events written      3727
+
+Frames     : 315
+Events     : 4462
+Last event : 10466.6 ms
+Rate       : 426 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_071.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_072.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     30916  frame    60 | events written     51648  frame    90 | events written     65278  frame   120 | events written     78002  frame   150 | events written     86791  frame   180 | events written     93515  frame   210 | events written     97980  frame   240 | events written    100470  frame   270 | events written    103093  frame   300 | events written    104288
+
+Frames     : 311
+Events     : 104734
+Last event : 10333.2 ms
+Rate       : 10136 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_072.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_073.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1433  frame    60 | events written      2611  frame    90 | events written      3168  frame   120 | events written      3614  frame   150 | events written      4150  frame   180 | events written      4492  frame   210 | events written      4724  frame   240 | events written      4998  frame   270 | events written      5578  frame   300 | events written      6068
+
+Frames     : 311
+Events     : 6243
+Last event : 10333.1 ms
+Rate       : 604 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_073.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_074.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       568  frame    60 | events written      1189  frame    90 | events written      1566  frame   120 | events written      2016  frame   150 | events written      2665  frame   180 | events written      3787  frame   210 | events written      5355  frame   240 | events written      8553  frame   270 | events written     13520  frame   300 | events written     28085
+
+Frames     : 316
+Events     : 32700
+Last event : 10499.8 ms
+Rate       : 3114 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_074.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_075.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     13634  frame    60 | events written     44509  frame    90 | events written     64626  frame   120 | events written     78968  frame   150 | events written     87192  frame   180 | events written     97910  frame   210 | events written    114424  frame   240 | events written    128522  frame   270 | events written    138476  frame   300 | events written    144754
+
+Frames     : 315
+Events     : 147026
+Last event : 10466.6 ms
+Rate       : 14047 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_075.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_076.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      6214  frame    60 | events written      8019  frame    90 | events written      9831  frame   120 | events written     11293  frame   150 | events written     12502  frame   180 | events written     13667  frame   210 | events written     14570  frame   240 | events written     15384  frame   270 | events written     16064  frame   300 | events written     16811
+
+Frames     : 306
+Events     : 16996
+Last event : 10166.6 ms
+Rate       : 1672 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_076.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_077.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       976  frame    60 | events written      2437  frame    90 | events written      3137  frame   120 | events written      4553  frame   150 | events written      6398  frame   180 | events written      9849  frame   210 | events written     16659  frame   240 | events written     20116  frame   270 | events written     26083  frame   300 | events written     33988
+
+Frames     : 316
+Events     : 38839
+Last event : 10500.0 ms
+Rate       : 3699 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_077.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_078.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     11301  frame    60 | events written     29398  frame    90 | events written     42821  frame   120 | events written     55447  frame   150 | events written     76951  frame   180 | events written     87829  frame   210 | events written     92923  frame   240 | events written     96767  frame   270 | events written     98719  frame   300 | events written    100140
+
+Frames     : 300
+Events     : 100140
+Last event : 9966.3 ms
+Rate       : 10048 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_078.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_079.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1316  frame    60 | events written      2779  frame    90 | events written      3250  frame   120 | events written      3618  frame   150 | events written      4180  frame   180 | events written      4806  frame   210 | events written      5440  frame   240 | events written      7230  frame   270 | events written     10506  frame   300 | events written     13089
+
+Frames     : 311
+Events     : 13845
+Last event : 10333.1 ms
+Rate       : 1340 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_079.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_080.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2058  frame    60 | events written      5803  frame    90 | events written     14401  frame   120 | events written     25124  frame   150 | events written     32511  frame   180 | events written     47389  frame   210 | events written     73549  frame   240 | events written    112862  frame   270 | events written    177935  frame   300 | events written    224762
+
+Frames     : 300
+Events     : 224762
+Last event : 9966.7 ms
+Rate       : 22551 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_080.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_081.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     17144  frame    60 | events written     36025  frame    90 | events written     45553  frame   120 | events written     59634  frame   150 | events written     73711  frame   180 | events written     86208  frame   210 | events written     93423  frame   240 | events written    100174  frame   270 | events written    108086  frame   300 | events written    115770
+
+Frames     : 303
+Events     : 116411
+Last event : 10066.6 ms
+Rate       : 11564 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_081.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_082.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      4242  frame    60 | events written      6673  frame    90 | events written      8669  frame   120 | events written     11441  frame   150 | events written     15014  frame   180 | events written     18569  frame   210 | events written     21060  frame   240 | events written     24141  frame   270 | events written     27140  frame   300 | events written     30133
+
+Frames     : 307
+Events     : 30837
+Last event : 10200.0 ms
+Rate       : 3023 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_082.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_083.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      3041  frame    60 | events written      7148  frame    90 | events written     10295  frame   120 | events written     13359  frame   150 | events written     15170  frame   180 | events written     16372  frame   210 | events written     19373  frame   240 | events written     22079  frame   270 | events written     27898  frame   300 | events written     35875
+
+Frames     : 304
+Events     : 37678
+Last event : 10100.0 ms
+Rate       : 3731 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_083.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_084.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5799  frame    60 | events written     14955  frame    90 | events written     24228  frame   120 | events written     30868  frame   150 | events written     40286  frame   180 | events written     44809  frame   210 | events written     49590  frame   240 | events written     50962  frame   270 | events written     52439  frame   300 | events written     54149
+
+Frames     : 312
+Events     : 54670
+Last event : 10364.4 ms
+Rate       : 5275 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_084.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_085.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1094  frame    60 | events written      2814  frame    90 | events written      5740  frame   120 | events written      6868  frame   150 | events written      9096  frame   180 | events written     12865  frame   210 | events written     17028  frame   240 | events written     24412  frame   270 | events written     42658  frame   300 | events written     56734
+
+Frames     : 316
+Events     : 64864
+Last event : 10500.0 ms
+Rate       : 6178 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_085.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_086.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     14145  frame    60 | events written     20510  frame    90 | events written     33585  frame   120 | events written     41971  frame   150 | events written     50909  frame   180 | events written     60412  frame   210 | events written     72007  frame   240 | events written     88435  frame   270 | events written    103937  frame   300 | events written    126646
+
+Frames     : 312
+Events     : 143520
+Last event : 10366.6 ms
+Rate       : 13844 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_086.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_087.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     34630  frame    60 | events written     51546  frame    90 | events written     64286  frame   120 | events written     77795  frame   150 | events written     88715  frame   180 | events written     94566  frame   210 | events written     99284  frame   240 | events written    103047  frame   270 | events written    107864  frame   300 | events written    111345
+
+Frames     : 312
+Events     : 111704
+Last event : 10366.6 ms
+Rate       : 10775 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_087.dat
+
+
+Running simulator...
+Finished: V_DRONE_066
+
+============================================================
+Processing: V_DRONE_067
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_067.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_067.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_067_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_067
+
+============================================================
+Processing: V_DRONE_068
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_068.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_068.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_068_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_068
+
+============================================================
+Processing: V_DRONE_069
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_069.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_069.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_069_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_069
+
+============================================================
+Processing: V_DRONE_070
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_070.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_070.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_070_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_070
+
+============================================================
+Processing: V_DRONE_071
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_071.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_071.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_071_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_071
+
+============================================================
+Processing: V_DRONE_072
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_072.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_072.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_072_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_072
+
+============================================================
+Processing: V_DRONE_073
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_073.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_073.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_073_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_073
+
+============================================================
+Processing: V_DRONE_074
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_074.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_074.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_074_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_074
+
+============================================================
+Processing: V_DRONE_075
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_075.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_075.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_075_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_075
+
+============================================================
+Processing: V_DRONE_076
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_076.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_076.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_076_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_076
+
+============================================================
+Processing: V_DRONE_077
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_077.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_077.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_077_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_077
+
+============================================================
+Processing: V_DRONE_078
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_078.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_078.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_078_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_078
+
+============================================================
+Processing: V_DRONE_079
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_079.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_079.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_079_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_079
+
+============================================================
+Processing: V_DRONE_080
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_080.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_080.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_080_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_080
+
+============================================================
+Processing: V_DRONE_081
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_081.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_081.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_081_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_081
+
+============================================================
+Processing: V_DRONE_082
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_082.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_082.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_082_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_082
+
+============================================================
+Processing: V_DRONE_083
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_083.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_083.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_083_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_083
+
+============================================================
+Processing: V_DRONE_084
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_084.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_084.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_084_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_084
+
+============================================================
+Processing: V_DRONE_085
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_085.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_085.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_085_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_085
+
+============================================================
+Processing: V_DRONE_086
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_086.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_086.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_086_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_086
+
+============================================================
+Processing: V_DRONE_087
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_087.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_087.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_087_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_087
+
+============================================================
+Processing: V_DRONE_088
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_088.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_088.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_088_LABELS.matInput      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_088.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1666  frame    60 | events written      4782  frame    90 | events written      8463  frame   120 | events written      9588  frame   150 | events written     11051  frame   180 | events written     11842  frame   210 | events written     12624  frame   240 | events written     13145  frame   270 | events written     13936  frame   300 | events written     14358
+
+Frames     : 316
+Events     : 14536
+Last event : 10499.7 ms
+Rate       : 1384 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_088.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_089.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       297  frame    60 | events written       630  frame    90 | events written       971  frame   120 | events written      1359  frame   150 | events written      2030  frame   180 | events written      2351  frame   210 | events written      2698  frame   240 | events written      2971  frame   270 | events written      3608  frame   300 | events written      4036
+
+Frames     : 325
+Events     : 4509
+Last event : 10799.9 ms
+Rate       : 418 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_089.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_090.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1078  frame    60 | events written      1600  frame    90 | events written      2116  frame   120 | events written      2473  frame   150 | events written      3267  frame   180 | events written      3913  frame   210 | events written      5366  frame   240 | events written      8354  frame   270 | events written     14465  frame   300 | events written     47143
+
+Frames     : 312
+Events     : 73872
+Last event : 10366.7 ms
+Rate       : 7126 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_090.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_091.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     35971  frame    60 | events written     54267  frame    90 | events written     69643  frame   120 | events written     83912  frame   150 | events written    100469  frame   180 | events written    118488  frame   210 | events written    132411  frame   240 | events written    147614  frame   270 | events written    154825  frame   300 | events written    162140
+
+Frames     : 329
+Events     : 185692
+Last event : 10933.3 ms
+Rate       : 16984 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_091.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_092.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     23261  frame    60 | events written     49266  frame    90 | events written     60466  frame   120 | events written     67217  frame   150 | events written     74270  frame   180 | events written     80073  frame   210 | events written     83114  frame   240 | events written     92685  frame   270 | events written     98261  frame   300 | events written    108021
+
+Frames     : 329
+Events     : 114632
+Last event : 10933.3 ms
+Rate       : 10485 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_092.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_093.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      4049  frame    60 | events written      6660  frame    90 | events written      9123  frame   120 | events written     11480  frame   150 | events written     14348  frame   180 | events written     16714  frame   210 | events written     19347  frame   240 | events written     20383  frame   270 | events written     22057  frame   300 | events written     23569
+
+Frames     : 329
+Events     : 24272
+Last event : 10932.1 ms
+Rate       : 2220 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_093.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_094.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       594  frame    60 | events written       946  frame    90 | events written      1314  frame   120 | events written      1751  frame   150 | events written      2458  frame   180 | events written      2865  frame   210 | events written      3385  frame   240 | events written      3723  frame   270 | events written      4310  frame   300 | events written      4753
+
+Frames     : 321
+Events     : 5133
+Last event : 10666.6 ms
+Rate       : 481 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_094.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_095.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       486  frame    60 | events written       951  frame    90 | events written      2029  frame   120 | events written      4223  frame   150 | events written      6812  frame   180 | events written     12050  frame   210 | events written     20051  frame   240 | events written     38724  frame   270 | events written     64886  frame   300 | events written     85239
+
+Frames     : 312
+Events     : 93038
+Last event : 10366.6 ms
+Rate       : 8975 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_095.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_096.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     22881  frame    60 | events written     51918  frame    90 | events written     84169  frame   120 | events written    108661  frame   150 | events written    140842  frame   180 | events written    160452  frame   210 | events written    189477  frame   240 | events written    219053  frame   270 | events written    291967  frame   300 | events written    370420
+
+Frames     : 325
+Events     : 450844
+Last event : 10800.0 ms
+Rate       : 41745 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_096.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_097.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       424  frame    60 | events written      1044  frame    90 | events written      1920  frame   120 | events written      3321  frame   150 | events written      5465  frame   180 | events written      6928  frame   210 | events written      8802  frame   240 | events written     10263  frame   270 | events written     11039  frame   300 | events written     11707
+
+Frames     : 303
+Events     : 11832
+Last event : 10065.7 ms
+Rate       : 1175 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_097.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_098.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1830  frame    60 | events written      4277  frame    90 | events written      7895  frame   120 | events written     10747  frame   150 | events written     13557  frame   180 | events written     18164  frame   210 | events written     19373  frame   240 | events written     22079  frame   270 | events written     27153  frame   300 | events written     31251
+
+Frames     : 318
+Events     : 32476
+Last event : 10566.1 ms
+Rate       : 3074 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_098.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_099.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1377  frame    60 | events written      4426  frame    90 | events written      7548  frame   120 | events written     11043  frame   150 | events written     65012  frame   180 | events written    102494  frame   210 | events written    126103  frame   240 | events written    147521  frame   270 | events written    172599  frame   300 | events written    194338
+
+Frames     : 309
+Events     : 198607
+Last event : 10266.7 ms
+Rate       : 19345 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_099.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_100.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     11897  frame    60 | events written     15776  frame    90 | events written     19956  frame   120 | events written     24268  frame   150 | events written     27719  frame   180 | events written     33350  frame   210 | events written     45141  frame   240 | events written     67900  frame   270 | events written     92180  frame   300 | events written    108093
+
+Frames     : 328
+Events     : 122348
+Last event : 10900.0 ms
+Rate       : 11225 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_100.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_101.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     14852  frame    60 | events written     21391  frame    90 | events written     26967  frame   120 | events written     31775  frame   150 | events written     39468  frame   180 | events written     92198  frame   210 | events written    287033  frame   240 | events written    628379  frame   270 | events written    637415  frame   300 | events written    643274
+
+Frames     : 307
+Events     : 644928
+Last event : 10200.0 ms
+Rate       : 63228 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_101.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_102.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     10629  frame    60 | events written    142654  frame    90 | events written    174873  frame   120 | events written    202115  frame   150 | events written    223964  frame   180 | events written    231162  frame   210 | events written    235521  frame   240 | events written    240908  frame   270 | events written    248472  frame   300 | events written    253893
+
+Frames     : 305
+Events     : 255577
+Last event : 10132.9 ms
+Rate       : 25223 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_102.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_103.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      4329  frame    60 | events written      8798  frame    90 | events written     13071  frame   120 | events written     16780  frame   150 | events written     20471  frame   180 | events written     28537  frame   210 | events written     36934  frame   240 | events written     42153  frame   270 | events written     46704  frame   300 | events written     51477
+
+Frames     : 321
+Events     : 54623
+Last event : 10666.7 ms
+Rate       : 5121 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_103.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_104.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      5229  frame    60 | events written     10093  frame    90 | events written     14054  frame   120 | events written     17672  frame   150 | events written     21931  frame   180 | events written     29106  frame   210 | events written     35314  frame   240 | events written     40473  frame   270 | events written     44838  frame   300 | events written     48336
+
+Frames     : 300
+Events     : 48336
+Last event : 9966.7 ms
+Rate       : 4850 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_104.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_105.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2447  frame    60 | events written      4961  frame    90 | events written      7321  frame   120 | events written      9488  frame   150 | events written     11850  frame   180 | events written     14080  frame   210 | events written     16207  frame   240 | events written     18117  frame   270 | events written     19912  frame   300 | events written     21584
+
+Frames     : 304
+Events     : 21839
+Last event : 10099.6 ms
+Rate       : 2162 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_105.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_106.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      4486  frame    60 | events written      9629  frame    90 | events written     14926  frame   120 | events written     19360  frame   150 | events written     26390  frame   180 | events written     30315  frame   210 | events written     36601  frame   240 | events written     43730  frame   270 | events written     59278  frame   300 | events written     70389
+
+Frames     : 304
+Events     : 71231
+Last event : 10099.9 ms
+Rate       : 7053 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_106.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_107.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      7424  frame    60 | events written     16303  frame    90 | events written     24420  frame   120 | events written     30271  frame   150 | events written     35615  frame   180 | events written     40157  frame   210 | events written     42626  frame   240 | events written     45154  frame   270 | events written     47065  frame   300 | events written     49318
+
+Frames     : 300
+Events     : 49318
+Last event : 9966.6 ms
+Rate       : 4948 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_107.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_108.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2161  frame    60 | events written      4808  frame    90 | events written      8609  frame   120 | events written     12822  frame   150 | events written     17382  frame   180 | events written     22994  frame   210 | events written     34192  frame   240 | events written     41342  frame   270 | events written     43040  frame   300 | events written     45298
+
+Frames     : 304
+Events     : 46223
+Last event : 10099.9 ms
+Rate       : 4577 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_108.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_109.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written     16484  frame    60 | events written     34376  frame    90 | events written     53584  frame   120 | events written     70580  frame   150 | events written     84727  frame   180 | events written     88614  frame   210 | events written     90851  frame   240 | events written     92169  frame   270 | events written     93563  frame   300 | events written     94807
+
+Frames     : 326
+Events     : 97888
+Last event : 10832.9 ms
+Rate       : 9036 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_109.dat
+
+
+Running simulator...
+Finished: V_DRONE_088
+
+============================================================
+Processing: V_DRONE_089
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_089.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_089.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_089_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_089
+
+============================================================
+Processing: V_DRONE_090
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_090.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_090.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_090_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_090
+
+============================================================
+Processing: V_DRONE_091
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_091.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_091.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_091_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_091
+
+============================================================
+Processing: V_DRONE_092
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_092.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_092.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_092_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_092
+
+============================================================
+Processing: V_DRONE_093
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_093.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_093.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_093_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_093
+
+============================================================
+Processing: V_DRONE_094
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_094.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_094.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_094_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_094
+
+============================================================
+Processing: V_DRONE_095
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_095.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_095.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_095_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_095
+
+============================================================
+Processing: V_DRONE_096
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_096.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_096.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_096_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_096
+
+============================================================
+Processing: V_DRONE_097
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_097.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_097.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_097_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_097
+
+============================================================
+Processing: V_DRONE_098
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_098.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_098.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_098_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_098
+
+============================================================
+Processing: V_DRONE_099
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_099.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_099.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_099_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_099
+
+============================================================
+Processing: V_DRONE_100
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_100.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_100.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_100_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_100
+
+============================================================
+Processing: V_DRONE_101
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_101.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_101.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_101_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_101
+
+============================================================
+Processing: V_DRONE_102
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_102.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_102.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_102_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_102
+
+============================================================
+Processing: V_DRONE_103
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_103.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_103.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_103_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_103
+
+============================================================
+Processing: V_DRONE_104
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_104.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_104.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_104_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_104
+
+============================================================
+Processing: V_DRONE_105
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_105.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_105.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_105_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_105
+
+============================================================
+Processing: V_DRONE_106
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_106.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_106.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_106_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_106
+
+============================================================
+Processing: V_DRONE_107
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_107.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_107.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_107_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_107
+
+============================================================
+Processing: V_DRONE_108
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_108.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_108.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_108_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_108
+
+============================================================
+Processing: V_DRONE_109
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_109.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_109.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_109_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_109
+
+============================================================
+Processing: V_DRONE_110
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_110.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_110.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_110_LABELS.matInput      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_110.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      2202  frame    60 | events written      6005  frame    90 | events written      8157  frame   120 | events written     11855  frame   150 | events written     14641  frame   180 | events written     16118  frame   210 | events written     18759  frame   240 | events written     23208  frame   270 | events written     28551  frame   300 | events written     31620
+
+Frames     : 325
+Events     : 33489
+Last event : 10799.6 ms
+Rate       : 3101 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_110.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_111.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written      1247  frame    60 | events written      1752  frame    90 | events written      2164  frame   120 | events written      2782  frame   150 | events written      4479  frame   180 | events written      5866  frame   210 | events written      7718  frame   240 | events written     10466  frame   270 | events written     11085  frame   300 | events written     12140
+
+Frames     : 322
+Events     : 12363
+Last event : 10699.1 ms
+Rate       : 1156 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_111.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_112.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       251  frame    60 | events written       751  frame    90 | events written      1309  frame   120 | events written      1664  frame   150 | events written      2080  frame   180 | events written      2317  frame   210 | events written      3025  frame   240 | events written      3729  frame   270 | events written      4412  frame   300 | events written      4794
+
+Frames     : 300
+Events     : 4794
+Last event : 9958.8 ms
+Rate       : 481 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_112.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_113.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       430  frame    60 | events written       673  frame    90 | events written       930  frame   120 | events written      1271  frame   150 | events written      1902  frame   180 | events written      2226  frame   210 | events written      2481  frame   240 | events written      2895  frame   270 | events written      3262  frame   300 | events written      3759
+
+Frames     : 322
+Events     : 4369
+Last event : 10699.9 ms
+Rate       : 408 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_113.dat
+Input      : C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_114.mp4
+Resolution : 640 x 512
+Cp/Cn      : 0.2 / 0.2
+Shot noise : 0.0 Hz
+Refractory : 1 us
+
+  frame    30 | events written       392  frame    60 | events written       700  frame    90 | events written      1516  frame   120 | events written      3063  frame   150 | events written      3525  frame   180 | events written      3748  frame   210 | events written      4605  frame   240 | events written      5780  frame   270 | events written      7605  frame   300 | events written      8315
+
+Frames     : 316
+Events     : 8572
+Last event : 10499.8 ms
+Rate       : 816 ev/s
+Output     : C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_114.dat
+
+
+Running simulator...
+Finished: V_DRONE_110
+
+============================================================
+Processing: V_DRONE_111
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_111.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_111.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_111_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_111
+
+============================================================
+Processing: V_DRONE_112
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_112.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_112.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_112_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_112
+
+============================================================
+Processing: V_DRONE_113
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_113.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_113.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_113_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_113
+
+============================================================
+Processing: V_DRONE_114
+Video:     C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_114.mp4
+Events:    C:\Users\borna\Desktop\Dronovi\Data_new\clean_events\V_DRONE_114.dat
+Labels:    C:\Users\borna\Desktop\Dronovi\Data_raw\Video_V\V_DRONE_114_LABELS.mat
+
+Running simulator...
+Finished: V_DRONE_114
+
+============================================================
+ALL DONE
+Output folder: C:\Users\borna\Desktop\Dronovi\Data_new\clean_events
