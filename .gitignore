@@ -131,3 +131,5 @@ Data_new/verification/V_DRONE_*/
 tmp/
 scratch/
 fix_paths.py
+
+Data_new/runs/**/errors_*/
