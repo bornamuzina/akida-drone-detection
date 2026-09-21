@@ -126,3 +126,28 @@ outright against ground clutter.
 3. Synthetic dataset: drones low against terrain, plus drone-free
    footage.
 4. Report AP at 0.3 and 0.4 alongside 0.5.
+
+### Low against terrain, the drone is missed completely
+
+Recall by band on test, from the per-band ground truth and misses:
+
+| band           | boxes | misses | recall   |
+| -------------- | ----- | ------ | -------- |
+| upper (sky)    | 1361  | 247    | 0.82     |
+| middle         | 2227  | 570    | 0.74     |
+| lower (ground) | 655   | 416    | **0.37** |
+
+Not for want of examples: training has 3159 boxes in the lower band
+across 39 of 90 clips, and the median box size there is 10.4 px against
+10.5 px on test. A quarter of the training ones are under 8 px, so call
+it ~2400 usable examples.
+
+**Against sky the model finds the drone and fumbles the box. Against
+trees and rooftops it does not find it at all -- and it is neither for
+lack of examples nor because they are smaller. Why remains open.**
+
+_More footage of the same kind is unlikely to help. Two things are
+worth trying: oversampling the lower band during training from 11% to
+~30%, which tests whether the loss is simply dominated by the easy sky
+cases and needs no new data at all; and, if that fails, synthetic
+backgrounds for their variety rather than their number._
