@@ -39,6 +39,25 @@ It costs almost nothing here. The validation forward pass already runs
 every epoch; this keeps its output and does the decoding afterwards,
 so the extra work is Python, not GPU. Pass --no_ap to skip it.
 
+Freezing the backbone
+---------------------
+--freeze N holds the backbone fixed for the first N epochs, then
+releases it at a tenth of the learning rate.
+
+It matters most with --pretrained. The YOLO head starts random, so its
+first outputs are nonsense, the loss is large, and the gradients that
+follow are large too -- and they flow straight back through the
+backbone. Weights learned from 1.2M photographs get partly overwritten
+by a head that has not learned anything yet. Freezing lets the head
+settle first, on features that are already good, and only then allows
+the backbone to be fine-tuned.
+
+Frozen does not mean switched off. Images still pass through those
+layers and still produce features; only the update is skipped. Keras
+also puts frozen BatchNorm layers into inference mode, which is what
+transfer learning wants -- the running statistics came from ImageNet
+and should not drift on a much smaller set.
+
 Augmentation
 ------------
 --augment applies flips, brightness, shifts and shrinking, to the
@@ -59,6 +78,7 @@ Usage:
     python train.py --epochs 10 --negatives --name run_neg
     python train.py --epochs 10 --negatives --pretrained --name run_neg_pre
     python train.py --epochs 10 --negatives --pretrained --augment --name run_aug
+    python train.py --epochs 10 --negatives --pretrained --freeze 2 --name run_frozen
 """
 
 from pathlib import Path
@@ -75,6 +95,47 @@ import targets as T
 
 
 CLIP = 5.0
+
+
+# The detection head that yolo_base stacks on the AkidaNet backbone.
+# These are the layers pretrained.py leaves random, and the ones that
+# must keep training while the backbone is frozen. Matching on name
+# rather than position, so an architecture change does not silently
+# freeze the wrong half.
+HEAD_MARKERS = ("1conv", "2conv", "3conv", "detection_layer")
+
+
+def is_head(layer):
+    return any(m in layer.name for m in HEAD_MARKERS)
+
+
+def set_backbone_trainable(model, trainable, verbose=True):
+    """
+    Freeze or release everything that is not the detection head.
+
+    Returns (n_backbone, n_head). Printing the split is the point: a
+    freeze that caught the wrong layers trains silently and just comes
+    out worse, so the two counts are worth reading once.
+    """
+    n_backbone = 0
+    n_head = 0
+
+    for layer in model.layers:
+        if is_head(layer):
+            layer.trainable = True
+            n_head += 1
+        else:
+            layer.trainable = trainable
+            n_backbone += 1
+
+    if verbose:
+        state = "trainable" if trainable else "FROZEN"
+        print(f"  backbone : {n_backbone} layers {state}")
+        print(f"  head     : {n_head} layers trainable")
+        print(f"  weights  : {len(model.trainable_variables)} tensors "
+              "will update")
+
+    return n_backbone, n_head
 
 
 # ============================================================
@@ -342,6 +403,10 @@ def main():
                     help="add the non-drone clips as boxless frames")
     ap.add_argument("--pretrained", action="store_true",
                     help="start the backbone from ImageNet weights")
+    ap.add_argument("--freeze", type=int, default=0,
+                    help="hold the backbone fixed for the first N epochs")
+    ap.add_argument("--unfreeze_lr", type=float, default=None,
+                    help="learning rate after unfreezing (default lr/10)")
     ap.add_argument("--augment", action="store_true",
                     help="flip, brightness, shift and shrink; training only")
     ap.add_argument("--no_ap", action="store_true",
@@ -389,6 +454,13 @@ def main():
         from pretrained import load_imagenet_backbone
         load_imagenet_backbone(model, alpha=args.alpha)
 
+    unfreeze_lr = args.unfreeze_lr if args.unfreeze_lr else args.lr / 10.0
+
+    if args.freeze:
+        print()
+        print(f"BACKBONE FROZEN for the first {args.freeze} epoch(s)")
+        set_backbone_trainable(model, False)
+
     augment_fn = None
     if args.augment:
         from augment import augment
@@ -402,6 +474,8 @@ def main():
     print(f"negatives: {'on' if args.negatives else 'off'}")
     print(f"backbone : {'imagenet' if args.pretrained else 'random'}")
     print(f"augment  : {'on' if args.augment else 'off'}")
+    print(f"freeze   : {args.freeze} epoch(s)"
+          f"{'' if not args.freeze else f', then lr {unfreeze_lr}'}")
     print(f"per-epoch AP: {'on' if track_ap else 'off'}")
     print()
 
@@ -427,6 +501,19 @@ def main():
 
     for epoch in range(1, args.epochs + 1):
         t0 = time.time()
+
+        # Release the backbone once the head has stopped being random.
+        # The optimizer is rebuilt rather than reused: its momentum was
+        # accumulated for a different set of variables, and the new rate
+        # is deliberately gentler -- fine-tuning, not relearning.
+        if args.freeze and epoch == args.freeze + 1:
+            print()
+            print(f"UNFREEZING backbone, lr {args.lr} -> {unfreeze_lr}")
+            set_backbone_trainable(model, True)
+            optimizer = tf.keras.optimizers.Adam(learning_rate=unfreeze_lr)
+            print()
+            print(header)
+            print("-" * len(header))
 
         tr_loss, tr_rec, _, _ = run_epoch(
             model, train_ds, optimizer, args.batch_size,
@@ -489,6 +576,8 @@ def main():
                 "negatives": args.negatives,
                 "pretrained": args.pretrained,
                 "augment": args.augment,
+                "freeze": args.freeze,
+                "unfreeze_lr": unfreeze_lr if args.freeze else None,
                 "n_train": len(train_ds),
                 "n_val": len(val_ds),
                 "n_train_negative": train_ds.n_negative,
