@@ -6,6 +6,21 @@ than read into RAM. Only the frames actually being used get paged in.
 
 Boxes are already in 224x224 space -- build_tensors.py applied the
 letterbox transform when it wrote them -- so nothing is rescaled here.
+
+Negatives
+---------
+Clips of airplanes, birds and helicopters carry frames with an empty box
+list: their own class is ignored and they exist only to teach "nothing
+here". They live in the same tensor folder as the drone clips and are
+selected by name, through the *_neg keys in splits.json, so nothing
+reaches training unless it was asked for.
+
+Two things have to be switched on for them to be used at all:
+
+    clips_for(splits, "train", negatives=True)   picks the clip names
+    EventDataset(..., keep_empty=True)           indexes boxless frames
+
+Both default to off, so every earlier result reproduces unchanged.
 """
 
 from pathlib import Path
@@ -21,7 +36,13 @@ import config
 # ============================================================
 
 def load_splits(path=None):
-    """Read splits.json and return {split_name: [clip, ...]}."""
+    """
+    Read splits.json.
+
+    The three original keys are always present. The _neg keys are
+    returned as empty lists when absent, so this still works against a
+    splits.json written before negatives existed.
+    """
     path = Path(path or config.SPLITS_FILE)
 
     with open(path) as f:
@@ -31,7 +52,25 @@ def load_splits(path=None):
         "train": data["train"],
         "validation": data["validation"],
         "test": data["test"],
+        "train_neg": data.get("train_neg", []),
+        "validation_neg": data.get("validation_neg", []),
+        "test_neg": data.get("test_neg", []),
     }
+
+
+def clips_for(splits, name, negatives=False):
+    """
+    The clip list for one split, optionally with its negatives.
+
+    One place decides this, rather than every script writing
+    splits["train"] + splits["train_neg"] and one of them forgetting.
+    """
+    clips = list(splits[name])
+
+    if negatives:
+        clips += splits.get(f"{name}_neg", [])
+
+    return clips
 
 
 def load_clip(clip, tensor_dir=None):
@@ -87,9 +126,15 @@ class EventDataset:
     """
 
     def __init__(self, clips, tensor_dir=None, quiet_policy=None,
-                 verbose=True):
+                 verbose=True, keep_empty=False):
         self.tensor_dir = Path(tensor_dir or config.TENSOR_DIR)
         self.quiet_policy = quiet_policy or config.QUIET_POLICY
+
+        # Frames with no box used to be dropped unconditionally, since
+        # in the drone-only dataset a boxless frame meant a labelling
+        # gap. Now it can also mean a deliberate negative, so it is a
+        # choice -- and the default is the old behaviour.
+        self.keep_empty = keep_empty
 
         self._tensors = {}      # clip -> memmapped array
         self._records = {}      # clip -> list of frame dicts
@@ -99,6 +144,7 @@ class EventDataset:
         self.missing = []
         self.n_quiet = 0
         self.n_dropped = 0
+        self.n_negative = 0
 
         for clip in clips:
             tensors, records = load_clip(clip, self.tensor_dir)
@@ -112,7 +158,9 @@ class EventDataset:
 
             for i, rec in enumerate(records):
                 if not rec["boxes"]:
-                    continue
+                    if not self.keep_empty:
+                        continue
+                    self.n_negative += 1
 
                 if rec["quiet"]:
                     self.n_quiet += 1
@@ -135,7 +183,8 @@ class EventDataset:
         Returns (image, boxes, record).
 
         image  : float32 (224, 224, 1)
-        boxes  : float32 (n, 4) as (x, y, w, h) in 224-space pixels
+        boxes  : float32 (n, 4) as (x, y, w, h) in 224-space pixels,
+                 and (0, 4) for a negative frame
         record : the frame's metadata dict
         """
         clip, pos = self.index[i]
@@ -161,6 +210,14 @@ class EventDataset:
                 print(f"                 ... and {len(self.missing) - 5} more")
 
         print(f"  samples      : {len(self.index)}")
+
+        if self.keep_empty:
+            share = self.n_negative / max(len(self.index), 1) * 100
+            print(f"  negatives    : {self.n_negative} ({share:.1f}% of samples)")
+        elif self.n_negative:
+            print(f"  negatives    : {self.n_negative} dropped "
+                  "(keep_empty is off)")
+
         print(f"  quiet frames : {self.n_quiet} "
               f"(policy: {self.quiet_policy}"
               f"{f', {self.n_dropped} dropped' if self.n_dropped else ''})")
@@ -204,7 +261,9 @@ def batches(dataset, batch_size=None, shuffle=True, seed=None):
 
     Images stack cleanly into an array. Boxes cannot -- frames have
     different numbers of drones -- so they stay a list, and the target
-    builder is what turns them into a fixed-shape tensor.
+    builder is what turns them into a fixed-shape tensor. A negative
+    frame contributes an empty (0, 4) array, which make_target turns
+    into an all-zero target.
     """
     batch_size = batch_size or config.BATCH_SIZE
 
@@ -234,17 +293,27 @@ def batches(dataset, batch_size=None, shuffle=True, seed=None):
 
 def main():
     """Load every split and report. Run this to verify the data is sane."""
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--negatives", action="store_true",
+                    help="include the non-drone clips as negatives")
+    args = ap.parse_args()
+
     splits = load_splits()
 
     print(f"tensors : {config.TENSOR_DIR}")
     print(f"policy  : {config.QUIET_POLICY}")
+    print(f"negatives: {'on' if args.negatives else 'off'}")
     print()
 
     datasets = {}
 
     for name in ("train", "validation", "test"):
-        print(f"{name.upper()}  ({len(splits[name])} clips in split)")
-        ds = EventDataset(splits[name])
+        clips = clips_for(splits, name, args.negatives)
+
+        print(f"{name.upper()}  ({len(clips)} clips in split)")
+        ds = EventDataset(clips, keep_empty=args.negatives)
         datasets[name] = ds
 
         stats = ds.box_stats()

@@ -28,6 +28,12 @@ import time
 
 import numpy as np
 
+# config lives in src/model, one directory across from this one. Adding
+# it here means the script runs from anywhere without PYTHONPATH being
+# set first.
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "model"))
+
 import config
 
 

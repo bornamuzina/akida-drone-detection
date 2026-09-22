@@ -15,9 +15,18 @@ Two things here are specific to this data and worth knowing:
    background ones, because the drone is where events stack up. Clipping
    tight preferentially destroys the signal.
 
+Negatives
+---------
+--negatives adds the airplane, bird and helicopter clips as frames with
+no box. Watch max objectness when using it: loss_noobj grows with every
+negative frame while the divisor n_obj does not, so "predict nothing"
+becomes cheaper than it was when W_NOOBJ was chosen. If maxobj collapses
+toward zero, lower W_NOOBJ before blaming anything else.
+
 Usage:
     python train.py --clips 20 --epochs 10
     python train.py --epochs 50
+    python train.py --epochs 50 --negatives --name run_neg
 """
 
 from pathlib import Path
@@ -238,6 +247,8 @@ def main():
     ap.add_argument("--tensors", default=None,
                     help="override the tensor directory")
     ap.add_argument("--name", default="run")
+    ap.add_argument("--negatives", action="store_true",
+                    help="add the non-drone clips as boxless frames")
     args = ap.parse_args()
 
     # from akida_models import yolo_base
@@ -248,14 +259,17 @@ def main():
     # ---- data --------------------------------------------------------
     splits = dataset.load_splits()
 
-    train_clips = splits["train"]
+    train_clips = dataset.clips_for(splits, "train", args.negatives)
     if args.clips:
         train_clips = train_clips[:args.clips]
 
     print("TRAIN")
-    train_ds = dataset.EventDataset(train_clips, tensor_dir=tensor_dir)
+    train_ds = dataset.EventDataset(train_clips, tensor_dir=tensor_dir,
+                                    keep_empty=args.negatives)
     print("VALIDATION")
-    val_ds = dataset.EventDataset(splits["validation"], tensor_dir=tensor_dir)
+    val_ds = dataset.EventDataset(
+        dataset.clips_for(splits, "validation", args.negatives),
+        tensor_dir=tensor_dir, keep_empty=args.negatives)
 
     if len(train_ds) == 0:
         raise SystemExit("No training samples.")
@@ -273,6 +287,7 @@ def main():
     print(f"output   : {model.output_shape}")
     print(f"clip     : +/-{CLIP} -> uint8")
     print(f"lr       : {args.lr}, batch {args.batch_size}")
+    print(f"negatives: {'on' if args.negatives else 'off'}")
     print()
 
     optimizer = tf.keras.optimizers.Adam(learning_rate=args.lr)
@@ -328,18 +343,25 @@ def main():
                     "coord": W_COORD, "obj": W_OBJ,
                     "noobj": W_NOOBJ, "cls": W_CLASS,
                 },
+                "negatives": args.negatives,
                 "n_train": len(train_ds),
                 "n_val": len(val_ds),
+                "n_train_negative": train_ds.n_negative,
+                "n_val_negative": val_ds.n_negative,
                 "history": history,
             }, f, indent=2)
 
         # The failure mode to watch for. If confidence never rises the
         # model has settled into predicting nothing everywhere, and the
-        # no-object weight needs lowering.
+        # no-object weight needs lowering. Adding negatives makes this
+        # more likely, not less -- every boxless frame is pure noobj
+        # loss and does not increase the n_obj it is divided by.
         if epoch >= 3 and va_max < 0.1:
             print()
             print("  Max objectness still near zero -- the model is")
             print("  predicting 'nothing' everywhere. Lower W_NOOBJ.")
+            if args.negatives:
+                print("  The negatives make this easier to fall into.")
 
     print()
     print(f"best val loss: {best:.3f}")

@@ -16,9 +16,23 @@ the finding that matters: 91% of boxes are under 16 px and 16% under
 8 px, and an averaged number would hide whether the small ones work at
 all.
 
+Negatives
+---------
+--negatives adds the airplane, bird and helicopter clips, whose frames
+contain no drone. Every detection on them is a false positive, so the
+score drops -- that is the point. It is the first measurement of the
+false-alarm rate, which the drone-only splits cannot produce because
+every one of their frames contains a drone.
+
+The two numbers are not comparable, so they are written to different
+files: eval_test.json and eval_test_neg.json. Quote both. A drop from
+one to the other is a stricter measurement, not a worse model; a drop
+in the FIRST one between runs is a worse model.
+
 Usage:
     python evaluate.py --run full_20ms --split validation
     python evaluate.py --run full_20ms --split test        # once only
+    python evaluate.py --run full_20ms --split test --negatives
 """
 
 from pathlib import Path
@@ -129,6 +143,9 @@ def match(preds, truths, iou_threshold=0.5):
     (score, is_true_positive) and each ground-truth box can be claimed
     at most once. A second prediction on an already-matched drone is a
     false positive, which is the correct treatment.
+
+    With no ground truth at all -- a negative frame -- every prediction
+    is a false positive, which is also correct.
     """
     preds = sorted(preds, key=lambda b: -b[4])
     claimed = [False] * len(truths)
@@ -221,13 +238,19 @@ def main():
     ap_.add_argument("--iou", type=float, default=0.5)
     ap_.add_argument("--nms", type=float, default=0.4)
     ap_.add_argument("--limit", type=int, default=0)
+    ap_.add_argument("--weights", default="best.weights.h5",
+                     help="file name inside the run folder")
+    ap_.add_argument("--negatives", action="store_true",
+                     help="include the non-drone clips; measures the "
+                          "false-alarm rate, and is not comparable with "
+                          "the number from without them")
     args = ap_.parse_args()
 
     # from akida_models import yolo_base
     from yolo_stride16 import yolo_base_stride16
 
     run_dir = Path(config.RUNS_DIR) / args.run
-    weights = run_dir / "best.weights.h5"
+    weights = run_dir / args.weights
 
     if not weights.exists():
         raise SystemExit(f"No weights at {weights}")
@@ -236,14 +259,18 @@ def main():
 
     # ---- data --------------------------------------------------------
     splits = dataset.load_splits()
-    ds = dataset.EventDataset(splits[args.split], tensor_dir=tensor_dir,
-                              verbose=False)
+    ds = dataset.EventDataset(
+        dataset.clips_for(splits, args.split, args.negatives),
+        tensor_dir=tensor_dir, verbose=False,
+        keep_empty=args.negatives)
 
     n = len(ds) if not args.limit else min(args.limit, len(ds))
 
     print(f"run    : {args.run}")
     print(f"split  : {args.split}  ({n} samples)")
     print(f"conf   : {args.conf}   IoU {args.iou}   NMS {args.nms}")
+    if args.negatives:
+        print(f"neg    : {ds.n_negative} boxless frames included")
     print()
 
     # ---- model -------------------------------------------------------
@@ -261,6 +288,13 @@ def main():
     total_truth = 0
 
     tp = fp = fn = 0
+
+    # False positives landing on a frame that held no drone at all.
+    # These are the false-alarm rate, and they are worth separating from
+    # false positives on a frame where the model simply missed.
+    fp_on_empty = 0
+    n_empty = 0
+    n_empty_with_detection = 0
 
     # Per-size-bin tallies, so the average does not hide the small ones.
     bin_truth = {b: 0 for b in SIZE_BINS}
@@ -299,6 +333,12 @@ def main():
             tp += hits
             fp += len(mk) - hits
             fn += nt - hits
+
+            if nt == 0:
+                n_empty += 1
+                fp_on_empty += len(mk)
+                if kept:
+                    n_empty_with_detection += 1
 
             # Which sizes were found?
             matched_truth = set()
@@ -342,6 +382,20 @@ def main():
     print(f"AVERAGE PRECISION (AP@{args.iou}) : {ap:.3f}")
     print("  Area under the precision-recall curve, over all thresholds.")
 
+    # ---- false alarms --------------------------------------------------
+    if n_empty:
+        print()
+        print("FALSE ALARMS  (frames with no drone in them)")
+        print(f"  empty frames    : {n_empty}")
+        print(f"  frames that fired: {n_empty_with_detection} "
+              f"({n_empty_with_detection / n_empty * 100:.1f}%)")
+        print(f"  detections      : {fp_on_empty} "
+              f"({fp_on_empty / n_empty:.3f} per frame)")
+        print()
+        print("  This is the number the drone-only splits cannot produce.")
+        print("  In deployment an empty frame is the common case, so the")
+        print("  per-frame rate matters more than the AP above.")
+
     print()
     print("RECALL BY TARGET SIZE")
     print(f"  {'size (px)':>12}  {'boxes':>6}  {'found':>6}  {'recall':>7}")
@@ -375,11 +429,17 @@ def main():
     out = {
         "run": args.run,
         "split": args.split,
+        "negatives": args.negatives,
         "n_samples": n,
+        "n_empty_frames": n_empty,
         "conf_threshold": args.conf,
         "iou_threshold": args.iou,
         "nms_threshold": args.nms,
         "tp": tp, "fp": fp, "fn": fn,
+        "fp_on_empty_frames": fp_on_empty,
+        "empty_frames_with_detection": n_empty_with_detection,
+        "false_alarms_per_empty_frame": (
+            fp_on_empty / n_empty if n_empty else None),
         "precision": precision,
         "recall": recall,
         "f1": f1,
@@ -394,7 +454,12 @@ def main():
         },
     }
 
-    path = run_dir / f"eval_{args.split}.json"
+    # A run with negatives is a different measurement, so it gets its own
+    # file. Overwriting eval_test.json with it would destroy the only
+    # number comparable with every earlier run.
+    suffix = "_neg" if args.negatives else ""
+    path = run_dir / f"eval_{args.split}{suffix}.json"
+
     with open(path, "w") as f:
         json.dump(out, f, indent=2)
 
