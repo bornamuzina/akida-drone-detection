@@ -133,3 +133,5 @@ scratch/
 fix_paths.py
 
 Data_new/runs/**/errors_*/
+
+*.bak
