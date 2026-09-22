@@ -15,6 +15,30 @@ Two things here are specific to this data and worth knowing:
    background ones, because the drone is where events stack up. Clipping
    tight preferentially destroys the signal.
 
+Two checkpoints
+---------------
+Validation loss is a poor guide to detection quality. It is a per-slot
+regression figure dominated by the no-object term, so the model can
+lower it simply by becoming quieter -- fewer confident predictions --
+while finding fewer drones. A run has already shown this: validation
+recall peaked at epoch 2 while validation loss kept improving to
+epoch 4.
+
+So two sets of weights are kept, and the evaluation at the end decides
+between them:
+
+    best.weights.h5      lowest validation loss    (the old behaviour)
+    best_ap.weights.h5   highest validation AP     (what is scored)
+
+AP is the real metric: decode predictions into boxes, apply NMS, match
+against ground truth by IoU, take the area under the precision-recall
+curve. It cannot be trained on -- sorting and thresholding have no
+gradient -- but nothing stops it being measured.
+
+It costs almost nothing here. The validation forward pass already runs
+every epoch; this keeps its output and does the decoding afterwards,
+so the extra work is Python, not GPU. Pass --no_ap to skip it.
+
 Negatives
 ---------
 --negatives adds the airplane, bird and helicopter clips as frames with
@@ -25,8 +49,8 @@ toward zero, lower W_NOOBJ before blaming anything else.
 
 Usage:
     python train.py --clips 20 --epochs 10
-    python train.py --epochs 50
-    python train.py --epochs 50 --negatives --name run_neg
+    python train.py --epochs 10 --negatives --name run_neg
+    python train.py --epochs 10 --negatives --pretrained --name run_neg_pre
 """
 
 from pathlib import Path
@@ -200,14 +224,54 @@ def max_objectness(y_pred):
     return tf.reduce_max(tf.sigmoid(y_pred[..., 4]))
 
 
+def validation_ap(collected, iou_threshold=0.5, nms_threshold=0.4):
+    """
+    Average precision over a whole validation pass.
+
+    `collected` is the list of (raw prediction, ground-truth boxes) kept
+    during the pass, so no second forward pass is needed -- the cost is
+    the Python decode, NMS and matching.
+
+    evaluate.py is imported here rather than at the top because it
+    imports this module; at call time both are fully loaded and the
+    cycle is harmless.
+    """
+    import evaluate as ev
+
+    all_matches = []
+    total_truth = 0
+
+    for pred, truth in collected:
+        boxes = ev.decode_predictions(pred, conf_threshold=0.01)
+        boxes = ev.nms(boxes, threshold=nms_threshold)
+
+        m, nt = ev.match(boxes, truth, iou_threshold=iou_threshold)
+
+        all_matches.extend(m)
+        total_truth += nt
+
+    ap, _, _ = ev.average_precision(all_matches, total_truth)
+
+    return ap
+
+
 # ============================================================
 # TRAINING
 # ============================================================
 
-def run_epoch(model, ds, optimizer, batch_size, training=True, seed=None):
+def run_epoch(model, ds, optimizer, batch_size, training=True, seed=None,
+              collect=False):
+    """
+    One pass. Returns (loss, recall, max_objectness, collected).
+
+    With collect=True the raw predictions and their ground-truth boxes
+    are kept, which is what makes a per-epoch AP affordable: the forward
+    pass has already happened.
+    """
     losses = []
     recalls = []
     max_obj = 0.0
+    collected = []
 
     for images, boxes_list in dataset.batches(
         ds, batch_size=batch_size, shuffle=training, seed=seed
@@ -233,7 +297,13 @@ def run_epoch(model, ds, optimizer, batch_size, training=True, seed=None):
         recalls.append(float(batch_recall(y, pred)))
         max_obj = max(max_obj, float(max_objectness(pred)))
 
-    return float(np.mean(losses)), float(np.mean(recalls)), max_obj
+        if collect:
+            arr = pred.numpy()
+            for p, truth in zip(arr, boxes_list):
+                collected.append((p, np.asarray(truth, dtype=np.float32)))
+
+    return (float(np.mean(losses)), float(np.mean(recalls)), max_obj,
+            collected)
 
 
 def main():
@@ -249,7 +319,16 @@ def main():
     ap.add_argument("--name", default="run")
     ap.add_argument("--negatives", action="store_true",
                     help="add the non-drone clips as boxless frames")
+    ap.add_argument("--pretrained", action="store_true",
+                    help="start the backbone from ImageNet weights")
+    ap.add_argument("--no_ap", action="store_true",
+                    help="skip the per-epoch AP and its second checkpoint")
+    ap.add_argument("--iou", type=float, default=0.5,
+                    help="IoU threshold for the per-epoch AP")
+    ap.add_argument("--nms", type=float, default=0.4)
     args = ap.parse_args()
+
+    track_ap = not args.no_ap
 
     # from akida_models import yolo_base
     from yolo_stride16 import yolo_base_stride16
@@ -282,12 +361,19 @@ def main():
         nb_box=config.N_ANCHORS,
         alpha=args.alpha,
     )
+
+    if args.pretrained:
+        from pretrained import load_imagenet_backbone
+        load_imagenet_backbone(model, alpha=args.alpha)
+
     print()
     print(f"model    : alpha {args.alpha}, {model.count_params():,} params")
     print(f"output   : {model.output_shape}")
     print(f"clip     : +/-{CLIP} -> uint8")
     print(f"lr       : {args.lr}, batch {args.batch_size}")
     print(f"negatives: {'on' if args.negatives else 'off'}")
+    print(f"backbone : {'imagenet' if args.pretrained else 'random'}")
+    print(f"per-epoch AP: {'on' if track_ap else 'off'}")
     print()
 
     optimizer = tf.keras.optimizers.Adam(learning_rate=args.lr)
@@ -297,26 +383,45 @@ def main():
 
     history = []
     best = float("inf")
+    best_ap = -1.0
+    best_ap_epoch = None
+    best_loss_epoch = None
 
-    print(f"{'epoch':>5}  {'train':>9}  {'val':>9}  "
-          f"{'t.rec':>6}  {'v.rec':>6}  {'maxobj':>6}  {'min':>5}")
-    print("-" * 62)
+    header = (f"{'epoch':>5}  {'train':>9}  {'val':>9}  "
+              f"{'t.rec':>6}  {'v.rec':>6}  {'maxobj':>6}")
+    if track_ap:
+        header += f"  {'val AP':>7}"
+    header += f"  {'min':>5}"
+
+    print(header)
+    print("-" * len(header))
 
     for epoch in range(1, args.epochs + 1):
         t0 = time.time()
 
-        tr_loss, tr_rec, _ = run_epoch(
+        tr_loss, tr_rec, _, _ = run_epoch(
             model, train_ds, optimizer, args.batch_size,
             training=True, seed=epoch
         )
-        va_loss, va_rec, va_max = run_epoch(
-            model, val_ds, optimizer, args.batch_size, training=False
+        va_loss, va_rec, va_max, collected = run_epoch(
+            model, val_ds, optimizer, args.batch_size, training=False,
+            collect=track_ap
         )
+
+        va_ap = (validation_ap(collected, args.iou, args.nms)
+                 if track_ap else None)
+
+        # Let the predictions go before the next epoch allocates again.
+        collected = None
 
         dt = (time.time() - t0) / 60
 
-        print(f"{epoch:5d}  {tr_loss:9.3f}  {va_loss:9.3f}  "
-              f"{tr_rec:6.3f}  {va_rec:6.3f}  {va_max:6.3f}  {dt:5.1f}")
+        line = (f"{epoch:5d}  {tr_loss:9.3f}  {va_loss:9.3f}  "
+                f"{tr_rec:6.3f}  {va_rec:6.3f}  {va_max:6.3f}")
+        if track_ap:
+            line += f"  {va_ap:7.3f}"
+        line += f"  {dt:5.1f}"
+        print(line)
 
         history.append({
             "epoch": epoch,
@@ -325,14 +430,23 @@ def main():
             "train_recall": tr_rec,
             "val_recall": va_rec,
             "val_max_objectness": va_max,
+            "val_ap": va_ap,
             "minutes": dt,
         })
 
-        # Keep the best by validation loss, not the last epoch.
+        # Two checkpoints, because the two criteria disagree. The
+        # evaluation at the end decides which to keep.
         if va_loss < best:
             best = va_loss
+            best_loss_epoch = epoch
             model.save_weights(str(run_dir / "best.weights.h5"))
             model.save(str(run_dir / "best.keras"))
+
+        if track_ap and va_ap > best_ap:
+            best_ap = va_ap
+            best_ap_epoch = epoch
+            model.save_weights(str(run_dir / "best_ap.weights.h5"))
+            model.save(str(run_dir / "best_ap.keras"))
 
         with open(run_dir / "history.json", "w") as f:
             json.dump({
@@ -344,10 +458,15 @@ def main():
                     "noobj": W_NOOBJ, "cls": W_CLASS,
                 },
                 "negatives": args.negatives,
+                "pretrained": args.pretrained,
                 "n_train": len(train_ds),
                 "n_val": len(val_ds),
                 "n_train_negative": train_ds.n_negative,
                 "n_val_negative": val_ds.n_negative,
+                "best_val_loss": best,
+                "best_val_loss_epoch": best_loss_epoch,
+                "best_val_ap": best_ap if track_ap else None,
+                "best_val_ap_epoch": best_ap_epoch,
                 "history": history,
             }, f, indent=2)
 
@@ -364,8 +483,20 @@ def main():
                 print("  The negatives make this easier to fall into.")
 
     print()
-    print(f"best val loss: {best:.3f}")
-    print(f"weights      : {run_dir / 'best.weights.h5'}")
+    print(f"best val loss : {best:.3f}  (epoch {best_loss_epoch})")
+    print(f"  weights     : {run_dir / 'best.weights.h5'}")
+
+    if track_ap:
+        print(f"best val AP   : {best_ap:.3f}  (epoch {best_ap_epoch})")
+        print(f"  weights     : {run_dir / 'best_ap.weights.h5'}")
+        print()
+
+        if best_ap_epoch != best_loss_epoch:
+            print("  The two criteria picked different epochs, which is")
+            print("  the point of keeping both. Evaluate each and report")
+            print("  the better one -- and say which criterion chose it.")
+        else:
+            print("  Both criteria picked the same epoch.")
 
 
 if __name__ == "__main__":
