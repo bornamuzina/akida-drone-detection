@@ -39,6 +39,13 @@ It costs almost nothing here. The validation forward pass already runs
 every epoch; this keeps its output and does the decoding afterwards,
 so the extra work is Python, not GPU. Pass --no_ap to skip it.
 
+Augmentation
+------------
+--augment applies flips, brightness, shifts and shrinking, to the
+training pass only. Validation and test stay untouched, or their numbers
+stop being comparable with anything. See augment.py, and look at its
+--out sheet before trusting a run that used it.
+
 Negatives
 ---------
 --negatives adds the airplane, bird and helicopter clips as frames with
@@ -51,6 +58,7 @@ Usage:
     python train.py --clips 20 --epochs 10
     python train.py --epochs 10 --negatives --name run_neg
     python train.py --epochs 10 --negatives --pretrained --name run_neg_pre
+    python train.py --epochs 10 --negatives --pretrained --augment --name run_aug
 """
 
 from pathlib import Path
@@ -260,22 +268,35 @@ def validation_ap(collected, iou_threshold=0.5, nms_threshold=0.4):
 # ============================================================
 
 def run_epoch(model, ds, optimizer, batch_size, training=True, seed=None,
-              collect=False):
+              collect=False, augment_fn=None):
     """
     One pass. Returns (loss, recall, max_objectness, collected).
 
     With collect=True the raw predictions and their ground-truth boxes
     are kept, which is what makes a per-epoch AP affordable: the forward
     pass has already happened.
+
+    augment_fn is applied per sample, after batching and before the
+    targets are built -- boxes moved after that point would already have
+    been baked into the grid. It is ignored unless training, so the
+    validation pass sees the frames as they are.
     """
     losses = []
     recalls = []
     max_obj = 0.0
     collected = []
 
+    rng = np.random.default_rng(seed)
+
     for images, boxes_list in dataset.batches(
         ds, batch_size=batch_size, shuffle=training, seed=seed
     ):
+        if augment_fn is not None and training:
+            pairs = [augment_fn(im, bx, rng)
+                     for im, bx in zip(images, boxes_list)]
+            images = np.stack([p[0] for p in pairs])
+            boxes_list = [p[1] for p in pairs]
+
         x = to_uint8(images)
         y = T.make_targets(boxes_list)
 
@@ -321,6 +342,8 @@ def main():
                     help="add the non-drone clips as boxless frames")
     ap.add_argument("--pretrained", action="store_true",
                     help="start the backbone from ImageNet weights")
+    ap.add_argument("--augment", action="store_true",
+                    help="flip, brightness, shift and shrink; training only")
     ap.add_argument("--no_ap", action="store_true",
                     help="skip the per-epoch AP and its second checkpoint")
     ap.add_argument("--iou", type=float, default=0.5,
@@ -366,6 +389,11 @@ def main():
         from pretrained import load_imagenet_backbone
         load_imagenet_backbone(model, alpha=args.alpha)
 
+    augment_fn = None
+    if args.augment:
+        from augment import augment
+        augment_fn = augment
+
     print()
     print(f"model    : alpha {args.alpha}, {model.count_params():,} params")
     print(f"output   : {model.output_shape}")
@@ -373,6 +401,7 @@ def main():
     print(f"lr       : {args.lr}, batch {args.batch_size}")
     print(f"negatives: {'on' if args.negatives else 'off'}")
     print(f"backbone : {'imagenet' if args.pretrained else 'random'}")
+    print(f"augment  : {'on' if args.augment else 'off'}")
     print(f"per-epoch AP: {'on' if track_ap else 'off'}")
     print()
 
@@ -401,7 +430,7 @@ def main():
 
         tr_loss, tr_rec, _, _ = run_epoch(
             model, train_ds, optimizer, args.batch_size,
-            training=True, seed=epoch
+            training=True, seed=epoch, augment_fn=augment_fn
         )
         va_loss, va_rec, va_max, collected = run_epoch(
             model, val_ds, optimizer, args.batch_size, training=False,
@@ -459,6 +488,7 @@ def main():
                 },
                 "negatives": args.negatives,
                 "pretrained": args.pretrained,
+                "augment": args.augment,
                 "n_train": len(train_ds),
                 "n_val": len(val_ds),
                 "n_train_negative": train_ds.n_negative,
