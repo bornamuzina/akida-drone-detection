@@ -1,0 +1,93 @@
+{
+  "args": {
+    "clips": 0,
+    "epochs": 10,
+    "batch_size": 16,
+    "lr": 0.001,
+    "alpha": 0.5,
+    "tensors": null,
+    "name": "yolov2_s16_rgb_256_neg",
+    "negatives": true
+  },
+  "clip": 5.0,
+  "anchors": [
+    [
+      0.6049,
+      0.4908
+    ],
+    [
+      0.811,
+      0.6435
+    ],
+    [
+      1.0581,
+      0.7544
+    ],
+    [
+      1.4832,
+      1.0192
+    ],
+    [
+      2.207,
+      1.6028
+    ]
+  ],
+  "loss_weights": {
+    "coord": 5.0,
+    "obj": 5.0,
+    "noobj": 0.5,
+    "cls": 1.0
+  },
+  "negatives": true,
+  "n_train": 42206,
+  "n_val": 5532,
+  "n_train_negative": 14161,
+  "n_val_negative": 1804,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 4.600982909427619,
+      "val_loss": 1.73339938658365,
+      "train_recall": 0.567849746842426,
+      "val_recall": 0.4185332369942196,
+      "val_max_objectness": 0.9656535387039185,
+      "minutes": 21.17948518594106
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.5872257635212017,
+      "val_loss": 1.5881803199504851,
+      "train_recall": 0.8340433069008422,
+      "val_recall": 0.45610549132947975,
+      "val_max_objectness": 0.9622257351875305,
+      "minutes": 21.049700880050658
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.219480478002141,
+      "val_loss": 1.9000352506677674,
+      "train_recall": 0.8879925350039362,
+      "val_recall": 0.4147398843930636,
+      "val_max_objectness": 0.9810721278190613,
+      "minutes": 21.25601620276769
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.0240419397781617,
+      "val_loss": 1.5803630500698411,
+      "train_recall": 0.90658491219509,
+      "val_recall": 0.40697254335260113,
+      "val_max_objectness": 0.9880071878433228,
+      "minutes": 20.971481374899547
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.82560157855525,
+      "val_loss": 1.733008970188868,
+      "train_recall": 0.9247688130617503,
+      "val_recall": 0.368135838150289,
+      "val_max_objectness": 0.9969469904899597,
+      "minutes": 20.925441018740337
+    }
+  ]
+}
