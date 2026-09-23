@@ -1,0 +1,42 @@
+{
+  "run": "yolov2_s16_rgb_256_neg_pre_frz_aug",
+  "split": "test",
+  "negatives": true,
+  "n_samples": 5724,
+  "n_empty_frames": 2001,
+  "conf_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "nms_threshold": 0.4,
+  "tp": 3072,
+  "fp": 1716,
+  "fn": 1171,
+  "fp_on_empty_frames": 22,
+  "empty_frames_with_detection": 22,
+  "false_alarms_per_empty_frame": 0.010994502748625687,
+  "precision": 0.6416040100250626,
+  "recall": 0.7240160263964176,
+  "f1": 0.68032333074964,
+  "average_precision": 0.6069783561234151,
+  "recall_by_size": {
+    "0-8": {
+      "boxes": 41,
+      "found": 3,
+      "recall": 0.07317073170731707
+    },
+    "8-12": {
+      "boxes": 1930,
+      "found": 1234,
+      "recall": 0.6393782383419689
+    },
+    "12-16": {
+      "boxes": 1603,
+      "found": 1242,
+      "recall": 0.7747972551466001
+    },
+    "16-999": {
+      "boxes": 669,
+      "found": 593,
+      "recall": 0.8863976083707026
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "args": {
+    "clips": 0,
+    "epochs": 6,
+    "batch_size": 16,
+    "lr": 0.001,
+    "alpha": 0.5,
+    "tensors": null,
+    "name": "yolov2_s16_rgb_256_neg_pre_frz_aug",
+    "negatives": true,
+    "pretrained": true,
+    "freeze": 2,
+    "unfreeze_lr": null,
+    "augment": true,
+    "no_ap": false,
+    "iou": 0.5,
+    "nms": 0.4
+  },
+  "clip": 5.0,
+  "anchors": [
+    [
+      0.6049,
+      0.4908
+    ],
+    [
+      0.811,
+      0.6435
+    ],
+    [
+      1.0581,
+      0.7544
+    ],
+    [
+      1.4832,
+      1.0192
+    ],
+    [
+      2.207,
+      1.6028
+    ]
+  ],
+  "loss_weights": {
+    "coord": 5.0,
+    "obj": 5.0,
+    "noobj": 0.5,
+    "cls": 1.0
+  },
+  "negatives": true,
+  "pretrained": true,
+  "augment": true,
+  "freeze": 2,
+  "unfreeze_lr": 0.0001,
+  "n_train": 42206,
+  "n_val": 5532,
+  "n_train_negative": 14161,
+  "n_val_negative": 1804,
+  "best_val_loss": 0.8858855568021029,
+  "best_val_loss_epoch": 4,
+  "best_val_ap": 0.7003774846343402,
+  "best_val_ap_epoch": 6,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.8107152577599765,
+      "val_loss": 1.6294633134643715,
+      "train_recall": 0.6876312130334885,
+      "val_recall": 0.509393063583815,
+      "val_max_objectness": 0.9820498824119568,
+      "val_ap": 0.3044511856159027,
+      "minutes": 11.106162405014038
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.6555412003630667,
+      "val_loss": 1.5660793193597216,
+      "train_recall": 0.8271044813678335,
+      "val_recall": 0.525650289017341,
+      "val_max_objectness": 0.9783207178115845,
+      "val_ap": 0.36933316549856043,
+      "minutes": 10.37468344370524
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.4390107184264405,
+      "val_loss": 1.0946618069420644,
+      "train_recall": 0.8519508257802008,
+      "val_recall": 0.559971098265896,
+      "val_max_objectness": 0.9859372973442078,
+      "val_ap": 0.5718813619333978,
+      "minutes": 20.053557642300923
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.0307105179082452,
+      "val_loss": 0.8858855568021029,
+      "train_recall": 0.9137991822131932,
+      "val_recall": 0.5803829479768786,
+      "val_max_objectness": 0.982840895652771,
+      "val_ap": 0.6541679660195939,
+      "minutes": 19.902515184879302
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.9332357270754676,
+      "val_loss": 1.2262996830931552,
+      "train_recall": 0.9272629665415607,
+      "val_recall": 0.553106936416185,
+      "val_max_objectness": 0.991255521774292,
+      "val_ap": 0.599556657909127,
+      "minutes": 19.802472964922586
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.8489385533052651,
+      "val_loss": 0.9668472477018542,
+      "train_recall": 0.9358788264620205,
+      "val_recall": 0.536849710982659,
+      "val_max_objectness": 0.9899379014968872,
+      "val_ap": 0.7003774846343402,
+      "minutes": 19.708673258622486
+    }
+  ]
+}
